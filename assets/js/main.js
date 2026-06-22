@@ -153,6 +153,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function observeNewElements(selector = '.fade-in') {
         document.querySelectorAll(selector).forEach(el => fadeObserver.observe(el));
     }
+    window.observeNewElements = observeNewElements;
 
     // ========== CARGAR MÓDULOS ==========
     const modulesContainer = document.getElementById('modules-container');
