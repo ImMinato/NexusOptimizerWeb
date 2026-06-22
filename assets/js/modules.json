@@ -1,0 +1,90 @@
+[
+    {
+        "id": "disk",
+        "name": "Optimizador de Disco",
+        "description": "Elimina archivos temporales, cachés de navegadores, instaladores residuales y vacía la papelera.",
+        "icon": "fa-solid fa-hard-drive",
+        "category": "Limpieza",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "ram",
+        "name": "Optimizador de RAM",
+        "description": "Libera el Working Set de procesos en segundo plano y limpia la memoria caché no utilizada.",
+        "icon": "fa-solid fa-memory",
+        "category": "Rendimiento",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "network",
+        "name": "Optimizador de Red",
+        "description": "Ajusta la pila TCP/IP y el MTU para reducir la latencia (ping) y estabilizar la conexión.",
+        "icon": "fa-solid fa-wifi",
+        "category": "Red",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "privacy",
+        "name": "Privacidad y Telemetría",
+        "description": "Desactiva servicios de rastreo, recolección de datos y telemetría innecesaria de Windows.",
+        "icon": "fa-solid fa-shield-halved",
+        "category": "Privacidad",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "gaming",
+        "name": "Modo Gaming",
+        "description": "Prioriza los recursos de CPU y GPU para el proceso en primer plano, pausando tareas secundarias.",
+        "icon": "fa-solid fa-gamepad",
+        "category": "Gaming",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "startup",
+        "name": "Gestor de Inicio",
+        "description": "Lista, pausa o deshabilita aplicaciones y servicios que se ejecutan al encender la PC.",
+        "icon": "fa-solid fa-rocket",
+        "category": "Sistema",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "services",
+        "name": "Optimizador de Servicios",
+        "description": "Desactiva servicios ocultos de Windows que consumen CPU en segundo plano sin beneficio real.",
+        "icon": "fa-solid fa-gears",
+        "category": "Sistema",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "dns",
+        "name": "Optimizador DNS",
+        "description": "Cambia a servidores DNS rápidos y seguros (Cloudflare/Google) para una navegación más ágil.",
+        "icon": "fa-solid fa-server",
+        "category": "Red",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "pagefile",
+        "name": "Gestor de Pagefile",
+        "description": "Ajusta el archivo de paginación para mejorar el rendimiento en discos SSD y HDD.",
+        "icon": "fa-solid fa-file-lines",
+        "category": "Rendimiento",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "audio",
+        "name": "Optimizador de Audio",
+        "description": "Ajusta la latencia de los drivers de sonido para mejorar la sincronización en juegos rítmicos.",
+        "icon": "fa-solid fa-volume-high",
+        "category": "Gaming",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "tasks",
+        "name": "Planificador de Tareas",
+        "description": "Desactiva tareas automáticas de Windows (defrag, diagnóstico) que se ejecutan durante las partidas.",
+        "icon": "fa-solid fa-clock",
+        "category": "Sistema",
+        "color": "#b8a99a"
+    }
+]

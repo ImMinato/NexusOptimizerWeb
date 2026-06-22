@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Leon Diaz",
+        "role": "Jugador de juegos casuales",
+        "text": "Pasé de tener tirones en mitad de las partidas a jugar completamente fluido. El Modo Gaming de NexusOptimizer es magia pura.",
+        "avatar": "assets/images/avatar1.jpg",
+        "rating": 5
+    },
+    {
+        "name": "Laura G.",
+        "role": "Diseñadora Gráfica",
+        "text": "Mi PC de 8GB RAM estaba sufriendo con Photoshop. Después del System Ready, todo abre el doble de rápido. Increíble.",
+        "avatar": "assets/images/avatar2.jpg",
+        "rating": 5
+    },
+    {
+        "name": "Facundo R.",
+        "role": "Streamer",
+        "text": "El optimizador de Red bajó mi ping de 80ms a 45ms. Se nota muchísimo la diferencia en competitivo. ¡Recomendado!",
+        "avatar": "assets/images/avatar3.jpg",
+        "rating": 4
+    },
+    {
+        "name": "Sofía L.",
+        "role": "Estudiante de Ingeniería",
+        "text": "Tenía la PC llena de bloatware y programas de fábrica. NexusOptimizer los eliminó todos y ahora mi notebook vuela.",
+        "avatar": "assets/images/avatar4.jpg",
+        "rating": 5
+    }
+]

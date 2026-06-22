@@ -1,0 +1,5 @@
+[
+  { "so": "Windows 10 (todas las versiones)", "soporte": "✅ Compatibilidad asegurada" },
+  { "so": "Windows 11 (todas las versiones)", "soporte": "✅ Compatibilidad asegurada" },
+  { "so": "Windows 8.1 / 8", "soporte": "⚠️ Funcional, pero no testeado" }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "date": "Enero 2025",
+    "title": "Inicio del proyecto",
+    "description": "Un grupo de estudiantes detecta la falta de un optimizador verdaderamente gratuito y seguro."
+  },
+  {
+    "date": "Marzo 2025",
+    "title": "Primer prototipo",
+    "description": "Versión alfa con limpieza de temporales y desfragmentación básica."
+  },
+  {
+    "date": "Junio 2025",
+    "title": "Versión 1.0",
+    "description": "Lanzamiento con 6 módulos. Recepción positiva en foros de tecnología."
+  },
+  {
+    "date": "Diciembre 2025",
+    "title": "NexusOptimizer 2.0",
+    "description": "Rediseño completo, 11 módulos, modo gaming y protección de privacidad."
+  }
+]

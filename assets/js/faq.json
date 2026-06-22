@@ -1,0 +1,22 @@
+[
+  {
+    "question": "¿Por qué mi PC se pone lenta?",
+    "answer": "Windows acumula archivos temporales, registros obsoletos y servicios innecesarios que consumen RAM y CPU. Con el tiempo esto degrada el rendimiento incluso en hardware moderno.",
+    "icon": "fa-exclamation-triangle"
+  },
+  {
+    "question": "¿Qué hace NexusOptimizer?",
+    "answer": "Limpia archivos basura, libera RAM, desactiva servicios superfluos, optimiza la red y protege tu privacidad deshabilitando la telemetría. Todo con un solo clic.",
+    "icon": "fa-lightbulb"
+  },
+  {
+    "question": "¿Es seguro? ¿Puedo perder datos?",
+    "answer": "Es completamente seguro. Antes de cada optimización se crea un punto de restauración del sistema. Nunca se tocan documentos, fotos ni archivos personales.",
+    "icon": "fa-shield"
+  },
+  {
+    "question": "¿Funciona en cualquier PC?",
+    "answer": "Sí, siempre que uses Windows 10 u 11 de 64 bits con al menos 2 GB de RAM. Está probado en equipos desde gama baja hasta alta.",
+    "icon": "fa-desktop"
+  }
+]

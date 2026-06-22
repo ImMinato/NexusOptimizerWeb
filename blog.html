@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — NexusOptimizer</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <canvas id="particlesCanvas"></canvas>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-microchip logo-icon"></i>
+                <span class="logo-text">NEXUS<span class="highlight">OPTIMIZER</span></span>
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="presentacion.html">Presentación</a></li>
+                    <li><a href="benchmarks.html">Benchmarks</a></li>
+                    <li><a href="comparativa.html">Comparativa</a></li>
+                    <li><a href="glossary.html">Glosario</a></li>
+                    <li><a href="roadmap.html">Roadmap</a></li>
+                    <li><a href="support.html">Soporte</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false" aria-controls="navLinks">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Blog de NexusOptimizer</h1>
+                <p class="section-subtitle">Noticias, consejos y actualizaciones</p>
+                <div id="blog-container" class="blog-grid">
+                    <!-- Cargado desde main.js con fetchJSON -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="presentacion.html">Presentación</a>
+                <a href="benchmarks.html">Benchmarks</a>
+                <a href="comparativa.html">Comparativa</a>
+                <a href="glossary.html">Glosario</a>
+                <a href="roadmap.html">Roadmap</a>
+                <a href="support.html">Soporte</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="privacidad.html">Privacidad</a>
+                <a href="terminos.html">Términos</a>
+            </div>
+            <p>&copy; 2026 NexusOptimizer</p>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparativa — NexusOptimizer</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <canvas id="particlesCanvas"></canvas>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-microchip logo-icon"></i>
+                <span class="logo-text">NEXUS<span class="highlight">OPTIMIZER</span></span>
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="presentacion.html">Presentación</a></li>
+                    <li><a href="benchmarks.html">Benchmarks</a></li>
+                    <li><a href="comparativa.html" class="active">Comparativa</a></li>
+                    <li><a href="glossary.html">Glosario</a></li>
+                    <li><a href="roadmap.html">Roadmap</a></li>
+                    <li><a href="support.html">Soporte</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false" aria-controls="navLinks">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Comparativa de optimizadores</h1>
+                <p class="section-subtitle">Frente a las alternativas más populares del mercado</p>
+                <div class="comparativa-intro">
+                    <p>En esta tabla comparamos NexusOptimizer con otras herramientas de optimización de sistema. Analizamos <strong>precio, privacidad, peso, número de módulos, capacidad de restauración, publicidad, puntuación y compatibilidad</strong>.</p>
+                    <p>NexusOptimizer destaca por su <strong>modelo de pago único</strong>, <strong>privacidad total</strong> (sin telemetría), <strong>ligereza</strong> y la <strong>mayor cantidad de módulos</strong> (11) entre todas las opciones.</p>
+                </div>
+                <div class="table-responsive fade-in">
+                    <table class="comparativa-table" id="comparativa-table">
+                        <thead>
+                            <tr>
+                                <th>Herramienta</th>
+                                <th>Precio</th>
+                                <th>Privacidad</th>
+                                <th>Peso</th>
+                                <th>Módulos</th>
+                                <th>Restauración</th>
+                                <th>Publicidad</th>
+                                <th>Puntuación</th>
+                                <th>Compatibilidad</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="comparativa-leyenda">
+                    <p><span class="leyenda-dot" style="background:var(--accent);"></span> <strong>NexusOptimizer</strong> — La mejor opción en relación calidad-precio y privacidad.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="presentacion.html">Presentación</a>
+                <a href="benchmarks.html">Benchmarks</a>
+                <a href="comparativa.html">Comparativa</a>
+                <a href="glossary.html">Glosario</a>
+                <a href="roadmap.html">Roadmap</a>
+                <a href="support.html">Soporte</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="privacidad.html">Privacidad</a>
+                <a href="terminos.html">Términos</a>
+            </div>
+            <p>&copy; 2026 NexusOptimizer</p>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchJSON('assets/js/comparativa.json').then(data => {
+                const tbody = document.querySelector('#comparativa-table tbody');
+                tbody.innerHTML = data.map(tool => `
+                    <tr>
+                        <td><strong>${tool.tool}</strong></td>
+                        <td>${tool.precio}</td>
+                        <td>${tool.privacidad}</td>
+                        <td>${tool.peso}</td>
+                        <td>${tool.modulos}</td>
+                        <td>${tool.restauracion}</td>
+                        <td>${tool.publicidad}</td>
+                        <td>${tool.puntuacion}</td>
+                        <td>${tool.compatibilidad}</td>
+                    </tr>
+                `).join('');
+            });
+        });
+    </script>
+</body>
+</html>

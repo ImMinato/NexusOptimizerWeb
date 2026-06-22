@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusOptimizer — Potencia tu PC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <canvas id="particlesCanvas"></canvas>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-microchip logo-icon"></i>
+                <span class="logo-text">NEXUS<span class="highlight">OPTIMIZER</span></span>
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="presentacion.html">Presentación</a></li>
+                    <li><a href="benchmarks.html">Benchmarks</a></li>
+                    <li><a href="comparativa.html">Comparativa</a></li>
+                    <li><a href="glossary.html">Glosario</a></li>
+                    <li><a href="roadmap.html">Roadmap</a></li>
+                    <li><a href="support.html">Soporte</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false" aria-controls="navLinks">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>NexusOptimizer <span class="v2">v2.0</span></h1>
+                    <p class="subtitle">Tu PC merece rendir al máximo</p>
+                    <p class="description">Una suite ligera e inteligente que limpia, optimiza y acelera tu Windows. Sin complicaciones, sin riesgos.</p>
+                    <a href="#que-es" class="btn-primary"><i class="fas fa-arrow-down"></i> Descubrir más</a>
+                    <a href="comprar.html" class="btn-primary btn-secondary" style="margin-left:12px;"><i class="fas fa-shopping-cart"></i> Comprar ahora</a>
+                </div>
+                <div class="hero-image">
+                    <i class="fas fa-desktop hero-icon"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- ¿Qué es? -->
+        <section id="que-es" class="section que-es">
+            <div class="container">
+                <h2>¿Qué es NexusOptimizer?</h2>
+                <div class="que-es-content">
+                    <div class="que-es-text">
+                        <p>Imagina que tu PC es un coche deportivo pero con el freno de mano puesto y el maletero lleno de cosas inútiles. NexusOptimizer es el mecánico que suelta el freno, vacía el maletero y ajusta el motor para que corras como nunca.</p>
+                        <p>Con <strong>11 módulos especializados</strong>, nuestra herramienta analiza, limpia y configura Windows para que aproveches cada byte de memoria y cada ciclo de CPU. Todo <strong>gratuito, local y seguro</strong>.</p>
+                        <p><i class="fas fa-check-circle" style="color:var(--accent);"></i> <strong>Sin anuncios, sin espionaje, sin suscripciones.</strong></p>
+                    </div>
+                    <div class="que-es-image">
+                        <div class="floating-shapes">
+                            <i class="fas fa-chart-simple"></i>
+                            <i class="fas fa-bolt"></i>
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cómo funciona -->
+        <section class="section how-it-works">
+            <div class="container">
+                <h2>Cuatro pasos, un solo clic</h2>
+                <p class="section-subtitle">Así de fácil es revivir tu PC</p>
+                <div class="steps-grid">
+                    <div class="step-item fade-in">
+                        <div class="step-number">01</div>
+                        <div class="step-icon"><i class="fas fa-search"></i></div>
+                        <h3>Escanea</h3>
+                        <p>Analiza tu sistema en busca de archivos basura, servicios inactivos y cuellos de botella.</p>
+                    </div>
+                    <div class="step-item fade-in">
+                        <div class="step-number">02</div>
+                        <div class="step-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Analiza</h3>
+                        <p>Te muestra qué está consumiendo más recursos y qué puedes mejorar.</p>
+                    </div>
+                    <div class="step-item fade-in">
+                        <div class="step-number">03</div>
+                        <div class="step-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                        <h3>Optimiza</h3>
+                        <p>Aplica los ajustes con un clic: libera RAM, limpia el disco, prioriza tu CPU.</p>
+                    </div>
+                    <div class="step-item fade-in">
+                        <div class="step-number">04</div>
+                        <div class="step-icon"><i class="fas fa-rotate-right"></i></div>
+                        <h3>Reinicia</h3>
+                        <p>Un reinicio aplica los cambios a nivel kernel. Notarás la diferencia al instante.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Módulos -->
+        <section class="section modules">
+            <div class="container">
+                <h2>Módulos de optimización</h2>
+                <p class="section-subtitle">11 herramientas especializadas para cada aspecto de tu sistema</p>
+                <div id="modules-container" class="modules-grid">
+                    <!-- Cargado desde modules.json -->
+                </div>
+            </div>
+        </section>
+
+
+<!-- Testimonios (nuevo) -->
+<section class="section testimonials">
+    <div class="container">
+        <h2>Lo que dicen nuestros usuarios</h2>
+        <p class="section-subtitle">Experiencias reales de personas que ya optimizaron su PC</p>
+        <div id="testimonials-container" class="testimonials-grid"></div>
+    </div>
+</section>
+
+
+        <!-- Requisitos -->
+        <section class="section requirements">
+            <div class="container">
+                <h2>Requisitos mínimos</h2>
+                <p class="section-subtitle">NexusOptimizer es ligero y funciona en casi cualquier PC con Windows</p>
+                <div class="requirements-box fade-in">
+                    <div class="req-item"><i class="fas fa-windows"></i> Windows 10 / 11 (64 bits)</div>
+                    <div class="req-item"><i class="fas fa-microchip"></i> Procesador x64 (Intel o AMD)</div>
+                    <div class="req-item"><i class="fas fa-memory"></i> 2 GB de RAM (4 GB recomendado)</div>
+                    <div class="req-item"><i class="fas fa-hard-drive"></i> 200 MB de espacio libre</div>
+                    <div class="req-item"><i class="fas fa-wifi"></i> Conexión a Internet (solo para lista StevenBlack)</div>
+                    <div class="req-item"><i class="fas fa-shield"></i> Permisos de administrador</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compatibilidad probada -->
+        <section class="section compatibility">
+            <div class="container">
+                <h2>Compatibilidad probada</h2>
+                <p class="section-subtitle">Versiones de Windows donde NexusOptimizer ha sido testeado exhaustivamente</p>
+<p class="section-subtitle">Windows 10 y 11 tienen compatibilidad asegurada. Otras versiones pueden funcionar, pero no están testeadas.</p>
+                <div class="table-responsive fade-in">
+                    <table class="compatibility-table">
+                        <thead>
+                            <tr><th>Sistema Operativo</th><th>Soporte</th></tr>
+                        </thead>
+                        <tbody id="compatibility-body">
+                            <!-- Cargado desde compatibility.json -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Precio único -->
+        <section class="section prices">
+            <div class="container">
+                <h2>Consigue NexusOptimizer</h2>
+                <p class="section-subtitle">Una sola licencia, acceso de por vida a todas las funciones.</p>
+                <div id="prices-container" class="prices-grid">
+                    <!-- Cargado desde prices.json -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Estadísticas -->
+        <section class="section stats">
+            <div class="container stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">11</span>
+                    <span class="stat-label">Módulos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Funciones</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">Clic para optimizar todo</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">67</span>
+                    <span class="stat-label">USD pago único</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Línea de tiempo -->
+        <section class="section timeline">
+            <div class="container">
+                <h2>Nuestra historia</h2>
+                <p class="section-subtitle">El camino de NexusOptimizer desde el primer commit hasta hoy</p>
+                <div class="timeline-container" id="timeline-container">
+                    <!-- Cargado desde timeline.json -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="presentacion.html">Presentación</a>
+                <a href="benchmarks.html">Benchmarks</a>
+                <a href="comparativa.html">Comparativa</a>
+                <a href="glossary.html">Glosario</a>
+                <a href="roadmap.html">Roadmap</a>
+                <a href="support.html">Soporte</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="privacidad.html">Privacidad</a>
+                <a href="terminos.html">Términos</a>
+            </div>
+            <p>&copy; 2026 NexusOptimizer. Todos los cambios se aplican en tiempo real.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

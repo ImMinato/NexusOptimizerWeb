@@ -1,0 +1,32 @@
+[
+  {
+    "game": "Cyberpunk 2077",
+    "config": "1080p, Medio",
+    "fps_before": 42,
+    "fps_after": 58,
+    "load_time_before": 45,
+    "load_time_after": 28,
+    "ram_before": 70,
+    "ram_after": 48
+  },
+  {
+    "game": "Fortnite",
+    "config": "1080p, Competitivo",
+    "fps_before": 110,
+    "fps_after": 144,
+    "load_time_before": 18,
+    "load_time_after": 11,
+    "ram_before": 65,
+    "ram_after": 42
+  },
+  {
+    "game": "Red Dead Redemption 2",
+    "config": "1080p, Alto",
+    "fps_before": 38,
+    "fps_after": 52,
+    "load_time_before": 62,
+    "load_time_after": 39,
+    "ram_before": 78,
+    "ram_after": 55
+  }
+]
