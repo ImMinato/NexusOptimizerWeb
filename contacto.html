@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusOptimizer — Contacto</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <canvas id="particlesCanvas"></canvas>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-microchip logo-icon"></i>
+                <span class="logo-text">NEXUS<span class="highlight">OPTIMIZER</span></span>
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="presentacion.html">Presentación</a></li>
+                    <li><a href="benchmarks.html">Benchmarks</a></li>
+                    <li><a href="comparativa.html">Comparativa</a></li>
+                    <li><a href="glossary.html">Glosario</a></li>
+                    <li><a href="roadmap.html">Roadmap</a></li>
+                    <li><a href="support.html">Soporte</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false" aria-controls="navLinks">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section team">
+            <div class="container">
+                <h1>Equipo NexusOptimizer</h1>
+                <p class="team-intro">Conoce a las mentes detrás de esta herramienta de optimización.</p>
+
+                <!-- ===== EQUIPO MANUAL (siempre visible) ===== -->
+                <div class="team-grid" style="margin-bottom:40px;">
+                    <!-- Máximo Uziel Seijo -->
+                    <div class="team-card fade-in">
+                        <div style="width:100px;height:100px;border-radius:50%;background:var(--bg-card);border:3px solid var(--accent);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-size:3rem;color:var(--accent);">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Máximo Uziel Seijo</h3>
+                        <div class="role">Líder de Proyecto</div>
+                        <p class="bio">Principal desarrollador y líder del equipo de NexusOptimizer. Futuro ingeniero en informática. Creador del código y la visión del proyecto.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/ImMinato" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="mailto:maximoseijouziel@gmail.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Micaias Ángel Juárez -->
+                    <div class="team-card fade-in">
+                        <div style="width:100px;height:100px;border-radius:50%;background:var(--bg-card);border:3px solid var(--accent);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-size:3rem;color:var(--accent);">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Micaias Ángel Juárez</h3>
+                        <div class="role">Integrante del equipo</div>
+                        <p class="bio">Integrante del equipo de desarrollo de NexusOptimizer, participando en las distintas etapas de programación, pruebas y documentación del proyecto.</p>
+                    </div>
+
+                    <!-- Ian Nazareno Noblega -->
+                    <div class="team-card fade-in">
+                        <div style="width:100px;height:100px;border-radius:50%;background:var(--bg-card);border:3px solid var(--accent);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-size:3rem;color:var(--accent);">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Ian Nazareno Noblega</h3>
+                        <div class="role">Integrante del equipo</div>
+                        <p class="bio">Integrante del equipo de desarrollo de NexusOptimizer, participando en las distintas etapas de programación, pruebas y documentación del proyecto.</p>
+                    </div>
+                </div>
+
+                <!-- ===== MENTOR / PROFESOR A CARGO ===== -->
+                <div class="honorable-mention">
+                    <div class="mention-badge">
+                        <i class="fas fa-heart" style="color: #ff6b6b;"></i>
+                        <span>Mentor / Profesor a cargo</span>
+                    </div>
+                    <h3>Javier Núñez</h3>
+                    <p class="mention-role">Ingeniero en Sistemas — Materia: Laboratorio de Hardware</p>
+                    <p class="mention-message">
+                        La supervisión técnica del profesor Núñez fue clave para validar que las decisiones de diseño y las prácticas de programación
+                        se ajustaran a lo trabajado en la materia, así como para orientar los criterios de prueba sobre hardware real propios
+                        de un laboratorio de hardware. Con mucho cariño, agradecemos su guía, paciencia y apoyo constante a lo largo de todo el proyecto. ¡Gracias, Javier! ❤️
+                    </p>
+                    <div class="mention-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="acknowledgments">
+                    <h3>Agradecimientos</h3>
+                    <p>A nuestros profesores y asesores del proyecto, por su guía y apoyo constante.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comunidad -->
+        <section class="section community">
+            <div class="container">
+                <h2>Únete a la comunidad</h2>
+                <div class="community-links">
+                    <a href="#" class="community-card fade-in">
+                        <i class="fab fa-discord"></i>
+                        <span>Discord</span>
+                        <p>Charlas, soporte y noticias en tiempo real</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="presentacion.html">Presentación</a>
+                <a href="benchmarks.html">Benchmarks</a>
+                <a href="comparativa.html">Comparativa</a>
+                <a href="glossary.html">Glosario</a>
+                <a href="roadmap.html">Roadmap</a>
+                <a href="support.html">Soporte</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="privacidad.html">Privacidad</a>
+                <a href="terminos.html">Términos</a>
+            </div>
+            <p>&copy; 2026 NexusOptimizer. Todos los cambios se aplican en tiempo real.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
