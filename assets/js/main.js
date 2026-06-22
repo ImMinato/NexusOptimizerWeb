@@ -224,6 +224,7 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(res => res.json())
             .then(async data => {
                 const membersWithRepos = await Promise.all(data.map(async member => {
+                    if (!member.github) return { ...member, repos: [] };
                     const username = member.github.split('/').pop();
                     const repos = await getCachedRepos(username);
                     return { ...member, repos };
@@ -231,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 teamContainer.innerHTML = membersWithRepos.map(member => `
                     <div class="team-card fade-in">
-                        <img src="${member.avatar || 'data:image/svg+xml,...'}" alt="${member.name}" loading="lazy" width="100" height="100" onerror="this.src='assets/images/default-avatar.png'">
+                        <img src="${member.avatar || 'assets/images/default-avatar.png'}" alt="${member.name}" loading="lazy" width="100" height="100" onerror="this.src='assets/images/default-avatar.png'">
                         <h3>${member.name}</h3>
                         <div class="role">${member.role}</div>
                         <p class="bio">${member.bio}</p>

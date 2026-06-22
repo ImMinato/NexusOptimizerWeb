@@ -1,22 +1,27 @@
 [
   {
-    "date": "Enero 2025",
-    "title": "Inicio del proyecto",
-    "description": "Un grupo de estudiantes detecta la falta de un optimizador verdaderamente gratuito y seguro."
+    "date": "Mediados de 2025",
+    "title": "El script original (Batch)",
+    "description": "El proyecto arranca como un script de línea de comandos para Windows (OpV6_4.bat, 'ByteFix Edition'), con perfiles preconfigurados y un motor de reversión propio."
   },
   {
-    "date": "Marzo 2025",
-    "title": "Primer prototipo",
-    "description": "Versión alfa con limpieza de temporales y desfragmentación básica."
-  },
-  {
-    "date": "Junio 2025",
-    "title": "Versión 1.0",
-    "description": "Lanzamiento con 6 módulos. Recepción positiva en foros de tecnología."
+    "date": "Fines de 2025",
+    "title": "Migración a aplicación de escritorio",
+    "description": "Se decide migrar la lógica validada del script a una aplicación C# sobre WPF, con interfaz gráfica, benchmark y persistencia de datos."
   },
   {
     "date": "Diciembre 2025",
+    "title": "Infraestructura común",
+    "description": "Se incorporan los módulos de registro de eventos, configuración persistente y notificaciones no bloqueantes."
+  },
+  {
+    "date": "Marzo 2026",
+    "title": "Expansión a 11 módulos",
+    "description": "Se amplía la cobertura funcional con once módulos de optimización (disco, privacidad, energía, mouse, visual, audio, tareas, DNS, pagefile) y la base de 38 consejos de mantenimiento."
+  },
+  {
+    "date": "Junio 2026",
     "title": "NexusOptimizer 2.0",
-    "description": "Rediseño completo, 11 módulos, modo gaming y protección de privacidad."
+    "description": "Lanzamiento de la versión final con perfiles de optimización (Gaming, Work, Balanced, Power Save), Health Score y más de 27 módulos en total."
   }
 ]

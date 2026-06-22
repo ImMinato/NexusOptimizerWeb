@@ -44,18 +44,38 @@
         <section class="section">
             <div class="container">
                 <h1>Presentación del proyecto</h1>
-                <p class="section-subtitle">Diseño, desarrollo e implementación de un sistema de optimización de rendimiento</p>
-                <div class="que-es-content">
-                    <div class="que-es-text">
-                        <p>NexusOptimizer es una aplicación de escritorio para Windows desarrollada en <strong>C# sobre el framework WPF</strong>, orientada al diagnóstico, mantenimiento y optimización de rendimiento de equipos de cómputo. El sistema está organizado en más de <strong>27 módulos independientes</strong> que cubren seis áreas funcionales: hardware y energía, disco y almacenamiento, red y privacidad, mantenimiento del sistema, diagnóstico mediante benchmarking, e infraestructura de soporte.</p>
-                        <p>El código fuente, de aproximadamente <strong>11.000 líneas distribuidas en 35 archivos</strong>, fue desarrollado, probado y documentado en su totalidad por el equipo a lo largo de casi un año de trabajo, presentado para la <strong>Feria de Ciencias y Tecnología 2026</strong>.</p>
+                <p class="presentation-intro">Diseño, desarrollo e implementación de un sistema de optimización de rendimiento</p>
+                <div class="intro-highlight fade-in">
+                    <p>"Un proyecto de esta escala no se entiende solo mirando el resultado final. Se entiende mirando el camino."</p>
+                </div>
+                <div class="que-es-text">
+                    <p>NexusOptimizer es una aplicación de escritorio para Windows desarrollada en <strong>C# sobre el framework WPF</strong>, orientada al diagnóstico, mantenimiento y optimización de rendimiento de equipos de cómputo. El sistema está organizado en más de <strong>27 módulos independientes</strong> que cubren seis áreas funcionales: hardware y energía, disco y almacenamiento, red y privacidad, mantenimiento del sistema, diagnóstico mediante benchmarking, e infraestructura de soporte.</p>
+                    <p>El código fuente, de aproximadamente <strong>11.000 líneas distribuidas en 35 archivos</strong>, fue desarrollado, probado y documentado en su totalidad por el equipo a lo largo de casi un año de trabajo, presentado para la <strong>Feria de Ciencias y Tecnología 2026</strong>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Líder de proyecto destacado -->
+        <section class="section founder-section">
+            <div class="container">
+                <h2>Liderazgo del proyecto</h2>
+                <p class="section-subtitle">La persona detrás de la arquitectura y el código de NexusOptimizer</p>
+                <div class="founder-card fade-in">
+                    <div class="founder-avatar">
+                        <img src="https://unavatar.io/github/ImMinato" alt="Máximo Uziel Seijo" width="110" height="110" loading="lazy" onerror="this.src='assets/images/default-avatar.png'">
+                    </div>
+                    <div class="founder-info">
+                        <h3>Máximo Uziel Seijo</h3>
+                        <div class="founder-role">Líder de Proyecto</div>
+                        <p class="founder-bio">Principal desarrollador y líder del equipo de NexusOptimizer. Responsable del diseño de la arquitectura por capas y de la mayor parte del código fuente, desde el script original hasta la versión final en WPF.</p>
+                        <a href="https://github.com/ImMinato" target="_blank" class="founder-github"><i class="fab fa-github"></i> Ver en GitHub</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Origen del proyecto -->
-        <section class="section how-it-works">
+        <section class="section">
             <div class="container">
                 <h2>De un script de Batch a una aplicación completa</h2>
                 <p class="section-subtitle">NexusOptimizer no nació desde cero</p>
@@ -115,10 +135,45 @@
                 <h2>Arquitectura del sistema</h2>
                 <p class="section-subtitle">Cuatro capas conceptuales, con separación clara de responsabilidades</p>
                 <div class="requirements-box fade-in">
-                    <div class="req-item"><i class="fas fa-window-restore"></i> Capa de presentación: interfaz gráfica WPF/XAML, 7 ventanas, 16 pestañas</div>
+                    <div class="req-item"><i class="fas fa-window-restore"></i> Capa de presentación: interfaz gráfica WPF/XAML — 7 ventanas, 16 pestañas</div>
                     <div class="req-item"><i class="fas fa-code"></i> Capa de lógica: 27 clases estáticas, una por dominio de optimización o diagnóstico</div>
                     <div class="req-item"><i class="fas fa-gears"></i> Servicios transversales: Logger, SettingsManager, NotificationService, RestorePointHelper, UpdateChecker</div>
                     <div class="req-item"><i class="fas fa-microchip"></i> Capa de sistema: Registro de Windows, WMI, PerformanceCounters y P/Invoke nativo</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stack tecnológico (tech-layout con JSON simulado) -->
+        <section class="section">
+            <div class="container">
+                <h2>Stack tecnológico</h2>
+                <p class="section-subtitle">Sin dependencia de librerías de terceros para la lógica central</p>
+                <div class="tech-layout">
+                    <div class="tech-info fade-in">
+                        <h3>Decisión de diseño</h3>
+                        <p>Toda la interacción con Windows se realiza mediante APIs estándar del framework .NET o invocaciones directas a utilidades de línea de comandos incluidas en el sistema operativo, sin depender de librerías de terceros para la lógica central.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> C# sobre .NET 8</li>
+                            <li><i class="fas fa-check"></i> WPF + XAML para la interfaz</li>
+                            <li><i class="fas fa-check"></i> WMI para hardware y sistema</li>
+                            <li><i class="fas fa-check"></i> P/Invoke para funciones sin equivalente administrado</li>
+                        </ul>
+                    </div>
+                    <div class="tech-json-box fade-in">
+                        <pre class="json-sim">{
+  <span class="key">"lenguaje"</span>: <span class="string">"C# (.NET 8)"</span>,
+  <span class="key">"interfaz"</span>: <span class="string">"WPF + XAML"</span>,
+  <span class="key">"registro"</span>: <span class="string">"Microsoft.Win32.Registry"</span>,
+  <span class="key">"hardware"</span>: <span class="string">"WMI / System.Management"</span>,
+  <span class="key">"monitoreo"</span>: <span class="string">"PerformanceCounter"</span>,
+  <span class="key">"persistencia"</span>: <span class="string">"JSON / System.Text.Json"</span>,
+  <span class="key">"interopNativa"</span>: <span class="string">"P/Invoke (user32, kernel32, Shell32)"</span>,
+  <span class="key">"bandejaSistema"</span>: <span class="string">"System.Windows.Forms.NotifyIcon"</span>,
+  <span class="key">"http"</span>: <span class="string">"System.Net.Http.HttpClient"</span>,
+  <span class="key">"lineasDeCodigo"</span>: <span class="number">11000</span>,
+  <span class="key">"archivos"</span>: <span class="number">35</span>
+}</pre>
+                    </div>
                 </div>
             </div>
         </section>
@@ -157,34 +212,37 @@
             </div>
         </section>
 
-        <!-- Stack tecnológico -->
+        <!-- Seguridad y reversibilidad -->
         <section class="section">
             <div class="container">
-                <h2>Stack tecnológico</h2>
-                <p class="section-subtitle">Sin dependencia de librerías de terceros para la lógica central</p>
-                <div class="table-responsive fade-in">
-                    <table class="comparativa-table">
-                        <thead>
-                            <tr><th>Componente</th><th>Tecnología utilizada</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td><strong>Lenguaje</strong></td><td>C# (.NET 8)</td></tr>
-                            <tr><td><strong>Framework de interfaz</strong></td><td>WPF con XAML</td></tr>
-                            <tr><td><strong>Acceso al registro</strong></td><td>Microsoft.Win32.Registry</td></tr>
-                            <tr><td><strong>Consultas de hardware</strong></td><td>WMI vía System.Management</td></tr>
-                            <tr><td><strong>Monitoreo en tiempo real</strong></td><td>System.Diagnostics.PerformanceCounter</td></tr>
-                            <tr><td><strong>Persistencia de datos</strong></td><td>JSON vía System.Text.Json</td></tr>
-                            <tr><td><strong>Interoperabilidad nativa</strong></td><td>P/Invoke sobre user32.dll, kernel32.dll, Shell32.dll</td></tr>
-                            <tr><td><strong>Bandeja del sistema</strong></td><td>System.Windows.Forms.NotifyIcon</td></tr>
-                            <tr><td><strong>Comunicación web</strong></td><td>System.Net.Http.HttpClient</td></tr>
-                            <tr><td><strong>Control de versiones</strong></td><td>Git</td></tr>
-                        </tbody>
-                    </table>
+                <h2>Seguridad y reversibilidad</h2>
+                <p class="section-subtitle">Cada optimización es transparente y puede revertirse</p>
+                <div class="security-grid">
+                    <div class="security-card fade-in">
+                        <i class="fas fa-clock-rotate-left"></i>
+                        <h3>Puntos de restauración</h3>
+                        <p>Se crea un punto de restauración de Windows vía WMI antes de aplicar cualquier cambio significativo.</p>
+                    </div>
+                    <div class="security-card fade-in">
+                        <i class="fas fa-floppy-disk"></i>
+                        <h3>Backup del registro</h3>
+                        <p>Copia completa del registro (HKLM/HKCU) generada antes de modificar cualquier clave.</p>
+                    </div>
+                    <div class="security-card fade-in">
+                        <i class="fas fa-eye"></i>
+                        <h3>Transparencia total</h3>
+                        <p>Cada optimización documenta qué hace y por qué, sin cambios ocultos ni silenciosos.</p>
+                    </div>
+                    <div class="security-card fade-in">
+                        <i class="fas fa-rotate-left"></i>
+                        <h3>Reversibilidad garantizada</h3>
+                        <p>Todo cambio aplicado puede deshacerse, restaurando el sistema a su estado anterior.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Resultados -->
+        <!-- Resultados clave -->
         <section class="section stats">
             <div class="container stats-grid">
                 <div class="stat-item">
@@ -206,14 +264,43 @@
             </div>
         </section>
 
-        <!-- Pruebas sobre hardware real -->
+        <!-- Pruebas sobre hardware real (perf-grid) -->
         <section class="section">
             <div class="container">
                 <h2>Pruebas sobre hardware real</h2>
                 <p class="section-subtitle">Validado en un equipo real del laboratorio, no en máquinas virtuales</p>
-                <div class="que-es-text">
-                    <p>Todas las pruebas funcionales se realizaron sobre un equipo con <strong>procesador AMD Athlon 320GE</strong> (gráficos integrados Radeon Vega), <strong>placa de video NVIDIA GeForce GT 710</strong>, <strong>7,9 GB de RAM</strong> y una <strong>unidad SSD de 222,8 GB</strong>, bajo Windows 10 IoT Enterprise LTSC 2021. Se priorizó hardware real porque buena parte de la lógica del sistema —lectura de sensores de temperatura, contadores de rendimiento, identificación de hardware— depende de controladores y datos no siempre representativos en un entorno virtualizado.</p>
-                    <p>Las pruebas confirmaron el funcionamiento correcto de la detección automática de CPU y GPU, el cálculo de espacio libre en disco, el monitoreo en tiempo real de CPU y RAM, y el mecanismo de respaldo en cascada del módulo de temperatura.</p>
+                <div class="perf-grid">
+                    <div class="perf-item fade-in">
+                        <div class="perf-icon"><i class="fas fa-microchip"></i></div>
+                        <div class="perf-bar">
+                            <span class="perf-label">CPU</span>
+                            <span class="perf-values">AMD Athlon 320GE — Radeon Vega Graphics</span>
+                        </div>
+                    </div>
+                    <div class="perf-item fade-in">
+                        <div class="perf-icon"><i class="fas fa-display"></i></div>
+                        <div class="perf-bar">
+                            <span class="perf-label">GPU dedicada</span>
+                            <span class="perf-values">NVIDIA GeForce GT 710</span>
+                        </div>
+                    </div>
+                    <div class="perf-item fade-in">
+                        <div class="perf-icon"><i class="fas fa-memory"></i></div>
+                        <div class="perf-bar">
+                            <span class="perf-label">Memoria RAM</span>
+                            <span class="perf-values">7,9 GB totales (uso en pruebas: ~4,8 GB)</span>
+                        </div>
+                    </div>
+                    <div class="perf-item fade-in">
+                        <div class="perf-icon"><i class="fas fa-hard-drive"></i></div>
+                        <div class="perf-bar">
+                            <span class="perf-label">Almacenamiento</span>
+                            <span class="perf-values">SSD 222,8 GB (63,6 GB libres en pruebas)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="que-es-text" style="margin-top:30px;">
+                    <p>Se priorizó hardware real porque buena parte de la lógica del sistema —lectura de sensores de temperatura, contadores de rendimiento, identificación de hardware— depende de controladores y datos no siempre representativos en un entorno virtualizado. Las pruebas confirmaron el funcionamiento correcto de la detección automática de CPU y GPU, el cálculo de espacio libre en disco, el monitoreo en tiempo real de CPU y RAM, y el mecanismo de respaldo en cascada del módulo de temperatura.</p>
                 </div>
             </div>
         </section>

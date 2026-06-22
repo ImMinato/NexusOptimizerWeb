@@ -1,16 +1,19 @@
 [
   {
-  "name": "Maximo Seijo",
-  "role": "CEO y Founder",
-  "bio": "Principal desarrollador y fundador. Futuro ingeniero en informática.",
-  "github": "https://github.com/ImMinato",
-  "avatar": "https://unavatar.io/github/ImMinato"
-},
+    "name": "Máximo Uziel Seijo",
+    "role": "Líder de Proyecto",
+    "bio": "Líder de proyecto y principal desarrollador de NexusOptimizer. Futuro ingeniero en informática. Responsable del diseño de la arquitectura y de la mayor parte del código fuente.",
+    "github": "https://github.com/ImMinato",
+    "avatar": "https://unavatar.io/github/ImMinato"
+  },
   {
-    "name": "Santiago (S4ndulos)",
-    "role": "Colaborador",
-    "bio": "Programador de escritorio y contribuidor del proyecto.",
-    "github": "https://github.com/MauroKpoxD",
-    "avatar": "https://unavatar.io/github/MauroKpoxD"
+    "name": "Micaias Ángel Juárez",
+    "role": "Integrante del equipo",
+    "bio": "Integrante del equipo de desarrollo, participando en las etapas de programación, pruebas y documentación del proyecto."
+  },
+  {
+    "name": "Ian Nazareno Noblega",
+    "role": "Integrante del equipo",
+    "bio": "Integrante del equipo de desarrollo, participando en las etapas de programación, pruebas y documentación del proyecto."
   }
 ]
