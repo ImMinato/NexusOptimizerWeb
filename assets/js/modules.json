@@ -86,5 +86,133 @@
         "icon": "fa-solid fa-clock",
         "category": "Sistema",
         "color": "#b8a99a"
+    },
+    {
+        "id": "gpu",
+        "name": "Tweaks de GPU",
+        "description": "Aplica ajustes específicos según el fabricante de la placa de video detectada (NVIDIA o AMD) para reducir latencia gráfica.",
+        "icon": "fa-solid fa-display",
+        "category": "Gaming",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "hosts",
+        "name": "Bloqueador de Hosts",
+        "description": "Bloquea dominios de publicidad y rastreo mediante la lista StevenBlack, integrada directamente al archivo hosts de Windows.",
+        "icon": "fa-solid fa-ban",
+        "category": "Privacidad",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "benchmark",
+        "name": "Motor de Benchmark",
+        "description": "Mide el rendimiento del sistema antes y después de optimizar, comparando resultados de forma objetiva.",
+        "icon": "fa-solid fa-stopwatch",
+        "category": "Diagnóstico",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "benchmark-history",
+        "name": "Historial de Benchmark",
+        "description": "Guarda hasta 50 sesiones de benchmark con gráfico de tendencia, para ver la evolución del rendimiento en el tiempo.",
+        "icon": "fa-solid fa-chart-line",
+        "category": "Diagnóstico",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "health-score",
+        "name": "Health Score",
+        "description": "Calcula una puntuación de 0 a 100 sobre el estado general del sistema, combinando múltiples factores de diagnóstico.",
+        "icon": "fa-solid fa-heart-pulse",
+        "category": "Diagnóstico",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "profiles",
+        "name": "Perfiles de Optimización",
+        "description": "Aplica varios módulos en una sola operación según un objetivo de uso: Gaming, Work, Balanced o Power Save.",
+        "icon": "fa-solid fa-layer-group",
+        "category": "Sistema",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "speedtest",
+        "name": "Test de Velocidad",
+        "description": "Mide la velocidad de descarga, subida y latencia de tu conexión a internet, sin depender de apps de terceros.",
+        "icon": "fa-solid fa-gauge",
+        "category": "Red",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "mouse",
+        "name": "Optimizador de Mouse",
+        "description": "Desactiva la aceleración del puntero para lograr un movimiento 1:1, reduciendo la latencia de entrada en juegos.",
+        "icon": "fa-solid fa-computer-mouse",
+        "category": "Gaming",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "visual",
+        "name": "Optimizador Visual",
+        "description": "Reduce animaciones, transparencias y efectos de la interfaz para liberar recursos de GPU en juegos.",
+        "icon": "fa-solid fa-eye",
+        "category": "Rendimiento",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "power",
+        "name": "Gestor de Energía",
+        "description": "Activa el plan oculto 'Máximo rendimiento' (Ultimate Performance) y elimina técnicas de ahorro que introducen microlatencias.",
+        "icon": "fa-solid fa-bolt",
+        "category": "Rendimiento",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "logger",
+        "name": "Registro de Eventos",
+        "description": "Registra cada acción del sistema en un archivo de log con rotación automática, para trazabilidad y soporte técnico.",
+        "icon": "fa-solid fa-file-pen",
+        "category": "Infraestructura",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "settings",
+        "name": "Gestor de Configuración",
+        "description": "Persiste tus preferencias (notificaciones, comportamiento de bandeja, posición de ventana) en un archivo de configuración propio.",
+        "icon": "fa-solid fa-sliders",
+        "category": "Infraestructura",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "notifications",
+        "name": "Notificaciones",
+        "description": "Sistema de avisos visuales no bloqueantes con cuatro niveles de severidad, en lugar de cuadros de diálogo tradicionales.",
+        "icon": "fa-solid fa-bell",
+        "category": "Infraestructura",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "restore",
+        "name": "Puntos de Restauración",
+        "description": "Crea automáticamente un punto de restauración de Windows antes de aplicar cualquier cambio significativo al sistema.",
+        "icon": "fa-solid fa-clock-rotate-left",
+        "category": "Infraestructura",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "core-logic",
+        "name": "Núcleo de Optimización",
+        "description": "Clase base que concentra los tweaks heredados del script original (red, CPU, GPU, sistema, modo extremo), validados desde la primera versión del proyecto.",
+        "icon": "fa-solid fa-microchip",
+        "category": "Sistema",
+        "color": "#b8a99a"
+    },
+    {
+        "id": "updates",
+        "name": "Verificador de Actualizaciones",
+        "description": "Comprueba en segundo plano si hay una nueva versión disponible de NexusOptimizer, sin interrumpir tu trabajo.",
+        "icon": "fa-solid fa-arrows-rotate",
+        "category": "Infraestructura",
+        "color": "#b8a99a"
     }
 ]

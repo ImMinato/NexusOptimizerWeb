@@ -31,7 +31,9 @@
 
 ## 📖 ¿Qué es NexusOptimizer?
 
-**NexusOptimizer** es una aplicación de escritorio para Windows que permite **diagnosticar, optimizar y mantener** el rendimiento de tu PC de forma segura, reversible y comprensible. Desarrollada en **C# con WPF**, cuenta con más de **11 módulos especializados** que cubren desde la limpieza de disco hasta la optimización de red y privacidad.
+**NexusOptimizer** es una aplicación de escritorio para Windows que permite **diagnosticar, optimizar y mantener** el rendimiento de tu PC de forma segura, reversible y comprensible. Desarrollada en **C# con WPF**, está organizada en **27 módulos independientes** que cubren seis áreas funcionales: hardware y energía, disco y almacenamiento, red y privacidad, mantenimiento del sistema, diagnóstico mediante benchmarking, e infraestructura de soporte.
+
+El proyecto es la evolución de un script de Batch previo (*ByteFix Edition*), migrado y ampliado hacia una aplicación completa con interfaz gráfica, persistencia de datos y un sistema de perfiles de optimización.
 
 > 💡 *Pensá en tu PC como un auto de carrera que viene con el freno de mano puesto y el baúl lleno de cosas inútiles. NexusOptimizer es el mecánico que suelta el freno, vacía el baúl y ajusta el motor.*
 
@@ -47,11 +49,17 @@
 | 🖱 **Mouse / Input** | Desactivación de aceleración, buffer de entrada | Movimiento 1:1, menor latencia en juegos |
 | 🎨 **Visual** | Animaciones, transparencia, efectos de taskbar | Libera recursos de GPU para juegos |
 | 🔊 **Audio** | Baja latencia (MMCSS), desactivación de ducking | Sonido sin cortes, ideal para gaming y producción musical |
-| 📋 **Tareas programadas** | Deshabilitación de 12 tareas de telemetría | Reduce el consumo de recursos en segundo plano |
+| 📋 **Tareas programadas** | Deshabilitación de tareas de telemetría | Reduce el consumo de recursos en segundo plano |
 | 🌐 **DNS** | Cloudflare, Google, Quad9, OpenDNS | Navegación más rápida y privada |
 | 💾 **Pagefile** | Tamaño fijo óptimo, limpieza al apagar | Mejora el rendimiento de la memoria virtual |
-| 🛡 **Hosts Blocker** | Bloqueo de 30+ dominios de publicidad/rastreo, lista StevenBlack | Navegación sin anuncios y mayor privacidad |
-| 📊 **Salud del PC** | Puntuación 0-100 basada en 8 factores | Diagnóstico completo del estado del sistema |
+| 🛡 **Hosts Blocker** | Bloqueo de dominios de publicidad/rastreo, lista StevenBlack | Navegación sin anuncios y mayor privacidad |
+| 🎮 **GPU** | Tweaks específicos según fabricante (NVIDIA/AMD) | Reduce latencia gráfica en juegos |
+| 📊 **Salud del PC** | Health Score de 0 a 100 | Diagnóstico completo del estado del sistema |
+| ⏱ **Benchmark** | Motor de medición + historial de hasta 50 sesiones | Compara rendimiento antes y después de optimizar |
+| 📶 **Test de velocidad** | Descarga, subida y latencia vía endpoints de Cloudflare | Sin depender de apps de terceros |
+| ⚙️ **Infraestructura** | Logger, SettingsManager, NotificationService, RestorePointHelper, UpdateChecker | Registro de eventos, configuración persistente, notificaciones y respaldo automático |
+
+> Esta tabla agrupa los módulos por área funcional. El detalle completo de los **27 módulos** está documentado en el Informe Técnico del proyecto.
 
 ---
 
@@ -59,7 +67,7 @@
 
 | Perfil | Descripción | Módulos aplicados |
 |--------|-------------|--------------------|
-| 🎮 **Gaming** | Máximo rendimiento en juegos | Energía, Mouse, Visual, Audio, Tareas, Red, CPU, GPU |
+| 🎮 **Gaming** | Máximo rendimiento en juegos | Energía, Mouse, Visual, Audio, Tareas, Red, GPU (8 módulos en una sola operación) |
 | 💼 **Work** | Privacidad y estabilidad para productividad | Energía balanceada, Privacidad completa, DNS Cloudflare |
 | ⚖️ **Balanced** | Punto medio ideal para uso general | Alto rendimiento, Mouse 1:1, Audio optimizado, Red optimizada |
 | 🔋 **Power Save** | Mínimo consumo energético | Ahorro de energía, Animaciones desactivadas, Apps en background off |
@@ -80,6 +88,8 @@
 | **Bandeja del sistema** | System.Windows.Forms.NotifyIcon |
 | **Comunicación con servicios web** | System.Net.Http.HttpClient |
 | **Control de versiones** | Git + GitHub |
+
+**Escala del proyecto:** ~11.000 líneas de código distribuidas en ~35 archivos, organizadas en una arquitectura de 4 capas (presentación, lógica, servicios transversales y sistema).
 
 ---
 
@@ -108,12 +118,12 @@ El sitio web de NexusOptimizer está disponible en:
 Incluye:
 
 - Página de inicio con descripción del producto
-- Presentación detallada (FAQ, tecnologías, seguridad)
+- Presentación detallada (objetivos, arquitectura, marco teórico, seguridad)
 - Benchmarks reales con gráficos
 - Comparativa con otras herramientas
 - Glosario técnico
 - Roadmap de desarrollo
-- Soporte y contacto
+- Soporte y contacto, con consulta directa por WhatsApp
 
 ---
 
@@ -125,7 +135,7 @@ Incluye:
 | Fortnite | 1080p, Competitivo | 110 | 144 | +31% |
 | Red Dead Redemption 2 | 1080p, Alto | 38 | 52 | +37% |
 
-📌 **Equipo de prueba:** AMD Athlon 320GE, NVIDIA GT 710, 8GB RAM, SSD 240GB
+📌 **Equipo de prueba:** AMD Athlon 320GE (Radeon Vega Graphics integrada), NVIDIA GeForce GT 710, 7,9 GB RAM, SSD 222,8 GB, Windows 10 IoT Enterprise LTSC 2021.
 
 ---
 
@@ -133,12 +143,14 @@ Incluye:
 
 | Nombre | Rol | GitHub |
 |--------|-----|--------|
-| Máximo Uziel Seijo | CEO y Fundador | [@ImMinato](https://github.com/ImMinato) |
-| Santiago (S4ndulos) | Desarrollador | [@MauroKpoxD](https://github.com/MauroKpoxD) |
+| Máximo Uziel Seijo | Líder de Proyecto | [@ImMinato](https://github.com/ImMinato) |
+| Micaias Ángel Juárez | Integrante del equipo | — |
+| Ian Nazareno Noblega | Integrante del equipo | — |
+| Santiago Luna | Desarrollador web / colaborador | [@MauroKpoxD](https://github.com/MauroKpoxD) |
 
-### Mención honorífica
+### Mentor del proyecto
 
-⭐ **Javier Núñez** — Acompañante y apoyo incondicional en el proyecto.
+⭐ **Javier Núñez** — Ingeniero en Sistemas, profesor a cargo de la materia Laboratorio de Hardware. Su supervisión técnica fue clave para validar las decisiones de diseño y los criterios de prueba sobre hardware real.
 
 ---
 
@@ -150,7 +162,7 @@ NexusOptimizer es un producto de pago único. El código fuente es privado y no 
 
 ## 🙏 Agradecimientos
 
-- A nuestros profesores y asesores del proyecto, por su guía y apoyo constante.
+- A nuestro mentor, el profesor Javier Núñez, por su guía y apoyo constante durante todo el proyecto.
 - A la Escuela de Educación Secundaria Técnica N° 1 "República del Paraguay" por brindarnos el espacio para desarrollar este proyecto.
 - A todos los beta testers que nos ayudaron a pulir cada detalle.
 

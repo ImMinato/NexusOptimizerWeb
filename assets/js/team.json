@@ -15,5 +15,12 @@
     "name": "Ian Nazareno Noblega",
     "role": "Integrante del equipo",
     "bio": "Integrante del equipo de desarrollo, participando en las etapas de programación, pruebas y documentación del proyecto."
+  },
+  {
+    "name": "Santiago Luna",
+    "role": "Desarrollador web / colaborador",
+    "bio": "Colaborador en el desarrollo y mantenimiento del sitio web de NexusOptimizer.",
+    "github": "https://github.com/MauroKpoxD",
+    "avatar": "https://unavatar.io/github/MauroKpoxD"
   }
 ]

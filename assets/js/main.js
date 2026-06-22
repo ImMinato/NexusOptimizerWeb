@@ -206,14 +206,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const testimonialsContainer = document.getElementById('testimonials-container');
     if (testimonialsContainer) {
         fetchJSON('assets/js/testimonials.json').then(data => {
-            testimonialsContainer.innerHTML = data.map(t => `
+            testimonialsContainer.innerHTML = data.map(t => {
+                const initials = t.name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+                return `
                 <div class="testimonial-card fade-in">
-                    <div class="testimonial-avatar"><img src="${t.avatar}" alt="${t.name}" loading="lazy" onerror="this.src='assets/images/default-avatar.png'"></div>
-                    <div class="testimonial-text">“${t.text}”</div>
+                    <div class="testimonial-avatar-initials">${initials}</div>
+                    <div class="testimonial-text">"${t.text}"</div>
                     <div class="testimonial-author">${t.name} <span>${t.role}</span></div>
                     <div class="testimonial-stars">${'⭐'.repeat(t.rating)}</div>
                 </div>
-            `).join('');
+            `;
+            }).join('');
             observeNewElements();
         });
     }
