@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusOptimizer — Presentación</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <canvas id="particlesCanvas"></canvas>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-microchip logo-icon"></i>
+                <span class="logo-text">NEXUS<span class="highlight">OPTIMIZER</span></span>
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="presentacion.html" class="active">Presentación</a></li>
+                    <li><a href="benchmarks.html">Benchmarks</a></li>
+                    <li><a href="comparativa.html">Comparativa</a></li>
+                    <li><a href="glossary.html">Glosario</a></li>
+                    <li><a href="roadmap.html">Roadmap</a></li>
+                    <li><a href="support.html">Soporte</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false" aria-controls="navLinks">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero de presentación -->
+        <section class="section">
+            <div class="container">
+                <h1>Presentación del proyecto</h1>
+                <p class="presentation-intro">Diseño, desarrollo e implementación de un sistema de optimización de rendimiento</p>
+                <div class="intro-highlight fade-in">
+                    <p>"Un proyecto de esta escala no se entiende solo mirando el resultado final. Se entiende mirando el camino."</p>
+                </div>
+                <div class="que-es-text">
+                    <p>NexusOptimizer es una aplicación de escritorio para Windows desarrollada en <strong>C# sobre el framework WPF</strong>, orientada al diagnóstico, mantenimiento y optimización de rendimiento de equipos de cómputo. El sistema está organizado en más de <strong>27 módulos independientes</strong> que cubren seis áreas funcionales: hardware y energía, disco y almacenamiento, red y privacidad, mantenimiento del sistema, diagnóstico mediante benchmarking, e infraestructura de soporte.</p>
+                    <p>El código fuente, de aproximadamente <strong>11.000 líneas distribuidas en 35 archivos</strong>, fue desarrollado, probado y documentado en su totalidad por el equipo a lo largo de casi un año de trabajo, presentado para la <strong>Feria de Ciencias y Tecnología 2026</strong>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Líder de proyecto destacado -->
+        <section class="section founder-section">
+            <div class="container">
+                <h2>Liderazgo del proyecto</h2>
+                <p class="section-subtitle">La persona detrás de la arquitectura y el código de NexusOptimizer</p>
+                <div class="founder-card fade-in">
+                    <div class="founder-avatar">
+                        <img src="https://unavatar.io/github/ImMinato" alt="Máximo Uziel Seijo" width="110" height="110" loading="lazy" onerror="this.src='assets/images/default-avatar.png'">
+                    </div>
+                    <div class="founder-info">
+                        <h3>Máximo Uziel Seijo</h3>
+                        <div class="founder-role">Líder de Proyecto</div>
+                        <p class="founder-bio">Principal desarrollador y líder del equipo de NexusOptimizer. Responsable del diseño de la arquitectura por capas y de la mayor parte del código fuente, desde el script original hasta la versión final en WPF.</p>
+                        <a href="https://github.com/ImMinato" target="_blank" class="founder-github"><i class="fab fa-github"></i> Ver en GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Origen del proyecto -->
+        <section class="section">
+            <div class="container">
+                <h2>De un script de Batch a una aplicación completa</h2>
+                <p class="section-subtitle">NexusOptimizer no nació desde cero</p>
+                <div class="que-es-text">
+                    <p>El proyecto es la evolución de un script de línea de comandos (<strong>OpV6_4.bat, "ByteFix Edition"</strong>) desarrollado previamente por el mismo equipo desde mediados de 2025, del cual se conservó y amplió la lógica de optimización ya validada, agregando una interfaz gráfica completa, persistencia de datos estructurada, capacidades de diagnóstico en tiempo real y un sistema de perfiles que coordina múltiples optimizaciones con una sola acción del usuario.</p>
+                    <p>Una verificación de trazabilidad confirmó coincidencia exacta en <strong>13 de los parámetros más relevantes</strong> entre ambas versiones —incluyendo el GUID del plan de energía "Máximo rendimiento" y el valor de NetworkThrottlingIndex— demostrando que la lógica de optimización no se reescribió desde cero, sino que se migró y extendió sobre una base ya validada empíricamente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Objetivos -->
+        <section class="section modules">
+            <div class="container">
+                <h2>Objetivos del proyecto</h2>
+                <p class="section-subtitle">Objetivo general y objetivos específicos planteados al inicio</p>
+                <div class="que-es-text">
+                    <p><strong>Objetivo general:</strong> diseñar, desarrollar e implementar una aplicación de escritorio para Windows que permita diagnosticar, optimizar y mantener el rendimiento de un equipo de cómputo de forma segura, reversible y comprensible para el usuario final.</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-item fade-in">
+                        <div class="step-icon"><i class="fas fa-arrows-rotate"></i></div>
+                        <h3>Migrar y ampliar</h3>
+                        <p>Migrar la lógica validada del script Batch hacia una arquitectura más robusta, con interfaz gráfica y manejo estructurado de errores.</p>
+                    </div>
+                    <div class="step-item fade-in">
+                        <div class="step-icon"><i class="fas fa-cubes"></i></div>
+                        <h3>Arquitectura modular</h3>
+                        <p>Cada función del sistema como una unidad de código independiente, probable y mantenible por separado.</p>
+                    </div>
+                    <div class="step-item fade-in">
+                        <div class="step-icon"><i class="fas fa-gauge-high"></i></div>
+                        <h3>Benchmark con historial</h3>
+                        <p>Medir el rendimiento antes y después de optimizar, con persistencia de un historial de sesiones.</p>
+                    </div>
+                    <div class="step-item fade-in">
+                        <div class="step-icon"><i class="fas fa-shield-halved"></i></div>
+                        <h3>Mecanismos de seguridad</h3>
+                        <p>Puntos de restauración y copias del registro previos a cualquier cambio, para garantizar reversibilidad total.</p>
+                    </div>
+                    <div class="step-item fade-in">
+                        <div class="step-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>Perfiles de optimización</h3>
+                        <p>Agrupar múltiples módulos según un objetivo de uso concreto, reduciendo la complejidad para el usuario.</p>
+                    </div>
+                    <div class="step-item fade-in">
+                        <div class="step-icon"><i class="fas fa-book"></i></div>
+                        <h3>Base de conocimiento</h3>
+                        <p>Buenas prácticas de mantenimiento de hardware y software, organizadas por categoría e importancia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Arquitectura -->
+        <section class="section requirements">
+            <div class="container">
+                <h2>Arquitectura del sistema</h2>
+                <p class="section-subtitle">Cuatro capas conceptuales, con separación clara de responsabilidades</p>
+                <div class="requirements-box fade-in">
+                    <div class="req-item"><i class="fas fa-window-restore"></i> Capa de presentación: interfaz gráfica WPF/XAML — 7 ventanas, 16 pestañas</div>
+                    <div class="req-item"><i class="fas fa-code"></i> Capa de lógica: 27 clases estáticas, una por dominio de optimización o diagnóstico</div>
+                    <div class="req-item"><i class="fas fa-gears"></i> Servicios transversales: Logger, SettingsManager, NotificationService, RestorePointHelper, UpdateChecker</div>
+                    <div class="req-item"><i class="fas fa-microchip"></i> Capa de sistema: Registro de Windows, WMI, PerformanceCounters y P/Invoke nativo</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stack tecnológico (tech-layout con JSON simulado) -->
+        <section class="section">
+            <div class="container">
+                <h2>Stack tecnológico</h2>
+                <p class="section-subtitle">Sin dependencia de librerías de terceros para la lógica central</p>
+                <div class="tech-layout">
+                    <div class="tech-info fade-in">
+                        <h3>Decisión de diseño</h3>
+                        <p>Toda la interacción con Windows se realiza mediante APIs estándar del framework .NET o invocaciones directas a utilidades de línea de comandos incluidas en el sistema operativo, sin depender de librerías de terceros para la lógica central.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> C# sobre .NET 8</li>
+                            <li><i class="fas fa-check"></i> WPF + XAML para la interfaz</li>
+                            <li><i class="fas fa-check"></i> WMI para hardware y sistema</li>
+                            <li><i class="fas fa-check"></i> P/Invoke para funciones sin equivalente administrado</li>
+                        </ul>
+                    </div>
+                    <div class="tech-json-box fade-in">
+                        <pre class="json-sim">{
+  <span class="key">"lenguaje"</span>: <span class="string">"C# (.NET 8)"</span>,
+  <span class="key">"interfaz"</span>: <span class="string">"WPF + XAML"</span>,
+  <span class="key">"registro"</span>: <span class="string">"Microsoft.Win32.Registry"</span>,
+  <span class="key">"hardware"</span>: <span class="string">"WMI / System.Management"</span>,
+  <span class="key">"monitoreo"</span>: <span class="string">"PerformanceCounter"</span>,
+  <span class="key">"persistencia"</span>: <span class="string">"JSON / System.Text.Json"</span>,
+  <span class="key">"interopNativa"</span>: <span class="string">"P/Invoke (user32, kernel32, Shell32)"</span>,
+  <span class="key">"bandejaSistema"</span>: <span class="string">"System.Windows.Forms.NotifyIcon"</span>,
+  <span class="key">"http"</span>: <span class="string">"System.Net.Http.HttpClient"</span>,
+  <span class="key">"lineasDeCodigo"</span>: <span class="number">11000</span>,
+  <span class="key">"archivos"</span>: <span class="number">35</span>
+}</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marco teórico -->
+        <section class="section">
+            <div class="container">
+                <h2>Marco teórico</h2>
+                <p class="section-subtitle">Conceptos centrales detrás de las optimizaciones</p>
+                <div class="glossary-grid">
+                    <div class="glossary-card fade-in">
+                        <h3>Registro de Windows</h3>
+                        <p>Base de datos jerárquica organizada en "colmenas" (HKLM, HKCU) donde se almacenan los valores que controlan el comportamiento de bajo nivel del sistema.</p>
+                    </div>
+                    <div class="glossary-card fade-in">
+                        <h3>WMI</h3>
+                        <p>Infraestructura estándar de Microsoft para consultar hardware y sistema mediante un lenguaje similar a SQL (WQL), usada para identificar CPU, GPU, discos y temperatura.</p>
+                    </div>
+                    <div class="glossary-card fade-in">
+                        <h3>Performance Counters</h3>
+                        <p>Mecanismo de .NET para monitorear uso de CPU, RAM y disco en tiempo real sin acceder directamente a estructuras del kernel.</p>
+                    </div>
+                    <div class="glossary-card fade-in">
+                        <h3>Planes de energía</h3>
+                        <p>Configuraciones identificadas por GUID que controlan frecuencias de CPU y comportamiento de ahorro de energía, incluyendo el plan oculto "Ultimate Performance".</p>
+                    </div>
+                    <div class="glossary-card fade-in">
+                        <h3>MMCSS</h3>
+                        <p>Servicio de Windows que prioriza CPU para procesos de audio/video, evitando cortes de sonido mediante el parámetro SystemResponsiveness.</p>
+                    </div>
+                    <div class="glossary-card fade-in">
+                        <h3>Algoritmo de Nagle</h3>
+                        <p>Técnica TCP que agrupa paquetes pequeños antes de enviarlos; desactivarla reduce la latencia a costa de mayor overhead de red.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seguridad y reversibilidad -->
+        <section class="section">
+            <div class="container">
+                <h2>Seguridad y reversibilidad</h2>
+                <p class="section-subtitle">Cada optimización es transparente y puede revertirse</p>
+                <div class="security-grid">
+                    <div class="security-card fade-in">
+                        <i class="fas fa-clock-rotate-left"></i>
+                        <h3>Puntos de restauración</h3>
+                        <p>Se crea un punto de restauración de Windows vía WMI antes de aplicar cualquier cambio significativo.</p>
+                    </div>
+                    <div class="security-card fade-in">
+                        <i class="fas fa-floppy-disk"></i>
+                        <h3>Backup del registro</h3>
+                        <p>Copia completa del registro (HKLM/HKCU) generada antes de modificar cualquier clave.</p>
+                    </div>
+                    <div class="security-card fade-in">
+                        <i class="fas fa-eye"></i>
+                        <h3>Transparencia total</h3>
+                        <p>Cada optimización documenta qué hace y por qué, sin cambios ocultos ni silenciosos.</p>
+                    </div>
+                    <div class="security-card fade-in">
+                        <i class="fas fa-rotate-left"></i>
+                        <h3>Reversibilidad garantizada</h3>
+                        <p>Todo cambio aplicado puede deshacerse, restaurando el sistema a su estado anterior.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resultados clave -->
+        <section class="section stats">
+            <div class="container stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">27</span>
+                    <span class="stat-label">Módulos / clases de lógica</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">16</span>
+                    <span class="stat-label">Pestañas de funcionalidad</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">38</span>
+                    <span class="stat-label">Consejos de mantenimiento</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Errores de compilación resueltos</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pruebas sobre hardware real (perf-grid) -->
+        <section class="section">
+            <div class="container">
+                <h2>Pruebas sobre hardware real</h2>
+                <p class="section-subtitle">Validado en un equipo real del laboratorio, no en máquinas virtuales</p>
+                <div class="perf-grid">
+                    <div class="perf-item fade-in">
+                        <div class="perf-icon"><i class="fas fa-microchip"></i></div>
+                        <div class="perf-bar">
+                            <span class="perf-label">CPU</span>
+                            <span class="perf-values">AMD Athlon 320GE — Radeon Vega Graphics</span>
+                        </div>
+                    </div>
+                    <div class="perf-item fade-in">
+                        <div class="perf-icon"><i class="fas fa-display"></i></div>
+                        <div class="perf-bar">
+                            <span class="perf-label">GPU dedicada</span>
+                            <span class="perf-values">NVIDIA GeForce GT 710</span>
+                        </div>
+                    </div>
+                    <div class="perf-item fade-in">
+                        <div class="perf-icon"><i class="fas fa-memory"></i></div>
+                        <div class="perf-bar">
+                            <span class="perf-label">Memoria RAM</span>
+                            <span class="perf-values">7,9 GB totales (uso en pruebas: ~4,8 GB)</span>
+                        </div>
+                    </div>
+                    <div class="perf-item fade-in">
+                        <div class="perf-icon"><i class="fas fa-hard-drive"></i></div>
+                        <div class="perf-bar">
+                            <span class="perf-label">Almacenamiento</span>
+                            <span class="perf-values">SSD 222,8 GB (63,6 GB libres en pruebas)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="que-es-text" style="margin-top:30px;">
+                    <p>Se priorizó hardware real porque buena parte de la lógica del sistema —lectura de sensores de temperatura, contadores de rendimiento, identificación de hardware— depende de controladores y datos no siempre representativos en un entorno virtualizado. Las pruebas confirmaron el funcionamiento correcto de la detección automática de CPU y GPU, el cálculo de espacio libre en disco, el monitoreo en tiempo real de CPU y RAM, y el mecanismo de respaldo en cascada del módulo de temperatura.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA final con botón de compra adicional -->
+        <section class="section presentation-cta-section">
+            <div class="container">
+                <div class="cta-box">
+                    <h3>¿Querés probar NexusOptimizer en tu PC?</h3>
+                    <p>Contactanos y te asesoramos sin compromiso. ¡Tu PC merece rendir al máximo!</p>
+                    <a href="contacto.html" class="btn-primary"><i class="fas fa-users"></i> Conoce a los creadores</a>
+                    <a href="comprar.html" class="btn-primary btn-secondary" style="margin-left:12px;"><i class="fas fa-shopping-cart"></i> Adquirir licencia</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="presentacion.html">Presentación</a>
+                <a href="benchmarks.html">Benchmarks</a>
+                <a href="comparativa.html">Comparativa</a>
+                <a href="glossary.html">Glosario</a>
+                <a href="roadmap.html">Roadmap</a>
+                <a href="support.html">Soporte</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="privacidad.html">Privacidad</a>
+                <a href="terminos.html">Términos</a>
+            </div>
+            <p>&copy; 2026 NexusOptimizer. Todos los cambios se aplican en tiempo real.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
