@@ -73,6 +73,7 @@
                         <p>${item.solution}</p>
                     </div>
                 `).join('');
+                if (typeof window.observeNewElements === 'function') window.observeNewElements();
             });
         });
     </script>

@@ -78,6 +78,7 @@
                         </div>
                     </div>
                 `).join('');
+                if (typeof window.observeNewElements === 'function') window.observeNewElements();
             });
         });
     </script>
