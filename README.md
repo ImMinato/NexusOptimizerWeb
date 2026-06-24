@@ -113,7 +113,7 @@ El proyecto es la evolución de un script de Batch previo (*ByteFix Edition*), m
 ## 📱 Sitio web
 
 El sitio web de NexusOptimizer está disponible en:
-🔗 **[NexusOptimizerWeb](https://github.com/ImMinato/NexusOptimizerWeb)**
+🔗 **[NexusOptimizerWeb](https://imminato.github.io/NexusOptimizerWeb/index.html)**
 
 Incluye:
 
