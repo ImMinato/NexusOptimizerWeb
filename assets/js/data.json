@@ -1,0 +1,662 @@
+{
+  "benchmarks": [
+    {
+      "game": "Cyberpunk 2077",
+      "config": "1080p, Medio",
+      "fps_before": 42,
+      "fps_after": 58,
+      "load_time_before": 45,
+      "load_time_after": 28,
+      "ram_before": 70,
+      "ram_after": 48
+    },
+    {
+      "game": "Fortnite",
+      "config": "1080p, Competitivo",
+      "fps_before": 110,
+      "fps_after": 144,
+      "load_time_before": 18,
+      "load_time_after": 11,
+      "ram_before": 65,
+      "ram_after": 42
+    },
+    {
+      "game": "Red Dead Redemption 2",
+      "config": "1080p, Alto",
+      "fps_before": 38,
+      "fps_after": 52,
+      "load_time_before": 62,
+      "load_time_after": 39,
+      "ram_before": 78,
+      "ram_after": 55
+    }
+  ],
+  "blog": [
+    {
+      "id": 1,
+      "title": "NexusOptimizer v2.0: ¡Ya disponible!",
+      "date": "2026-06-15",
+      "excerpt": "Lanzamos la nueva versión con 27 módulos de optimización, mejoras en el rendimiento y una interfaz más intuitiva.",
+      "content": "Después de meses de desarrollo, nos enorgullece anunciar NexusOptimizer v2.0. Esta versión incluye un nuevo motor de escaneo, optimizaciones para juegos y una sección de privacidad mejorada. Agradecemos a todos los beta testers que nos ayudaron a pulir cada detalle.",
+      "image": "assets/images/blog-v2.jpg",
+      "tags": ["Lanzamiento", "Actualización"]
+    },
+    {
+      "id": 2,
+      "title": "5 consejos para reducir el ping en tus juegos",
+      "date": "2026-06-10",
+      "excerpt": "Descubre ajustes sencillos que puedes hacer en Windows para bajar la latencia y mejorar tu experiencia en juegos online.",
+      "content": "El ping elevado puede arruinar una partida. En este artículo te mostramos cómo optimizar la configuración de red, desactivar servicios innecesarios y usar el modo gaming de NexusOptimizer para reducir la latencia hasta en un 30%.",
+      "image": "assets/images/blog-ping.jpg",
+      "tags": ["Gaming", "Red"]
+    },
+    {
+      "id": 3,
+      "title": "Cómo limpiar tu disco sin perder archivos importantes",
+      "date": "2026-06-05",
+      "excerpt": "Aprende a eliminar basura digital de forma segura y rápida con la herramienta de limpieza de NexusOptimizer.",
+      "content": "El disco duro se llena de archivos temporales, cachés y restos de instalaciones. Con nuestro módulo de optimización de disco, puedes liberar espacio sin preocuparte por borrar documentos importantes. Te contamos cómo funciona y por qué es seguro.",
+      "image": "assets/images/blog-disk.jpg",
+      "tags": ["Limpieza", "Disco"]
+    },
+    {
+      "id": 4,
+      "title": "Privacidad en Windows: qué datos recopila y cómo detenerlo",
+      "date": "2026-05-28",
+      "excerpt": "Microsoft recopila más datos de los que imaginas. Te explicamos qué hace la telemetría y cómo nuestro módulo de privacidad la desactiva.",
+      "content": "La telemetría de Windows envía información sobre tu uso a Microsoft. Aunque no es maliciosa, consume recursos y puede afectar tu privacidad. NexusOptimizer te permite desactivar estos servicios con un solo clic, devolviéndote el control de tu PC.",
+      "image": "assets/images/blog-privacy.jpg",
+      "tags": ["Privacidad", "Seguridad"]
+    },
+    {
+      "id": 5,
+      "title": "Optimización de audio: cómo mejorar el sonido en tus juegos",
+      "date": "2026-05-20",
+      "excerpt": "Ajusta la latencia del audio y elimina el 'ducking' automático para una experiencia inmersiva y sin cortes.",
+      "content": "El sonido es clave en los juegos. NexusOptimizer incluye un módulo de audio que reduce la latencia del subsistema de audio de Windows y desactiva la reducción automática de volumen durante llamadas. Descubre cómo estos ajustes mejoran tu experiencia.",
+      "image": "assets/images/blog-audio.jpg",
+      "tags": ["Audio", "Gaming"]
+    },
+    {
+      "id": 6,
+      "title": "Por qué deberías deshabilitar las tareas de telemetría de Windows",
+      "date": "2026-05-12",
+      "excerpt": "Las tareas programadas de diagnóstico y CEIP consumen recursos y envían datos a Microsoft. Te contamos cómo desactivarlas.",
+      "content": "Windows ejecuta docenas de tareas en segundo plano para recopilar datos de rendimiento y uso. Muchas de ellas no son necesarias para el funcionamiento diario. Con el módulo 'Tareas Programadas' de NexusOptimizer, puedes deshabilitarlas de forma segura y liberar recursos.",
+      "image": "assets/images/blog-tasks.jpg",
+      "tags": ["Telemetría", "Rendimiento"]
+    }
+  ],
+  "comparativa": [
+    {
+      "tool": "NexusOptimizer",
+      "precio": "67 USD (pago único)",
+      "privacidad": "Total (sin telemetría)",
+      "peso": "Ligero (200 MB)",
+      "modulos": 27,
+      "restauracion": "Sí",
+      "publicidad": "No",
+      "puntuacion": "★★★★★",
+      "compatibilidad": "Windows 10/11"
+    },
+    {
+      "tool": "CCleaner",
+      "precio": "Gratis / Pro 29.95 USD/año",
+      "privacidad": "Regular (recopila datos)",
+      "peso": "Medio (45 MB instalador)",
+      "modulos": 4,
+      "restauracion": "No",
+      "publicidad": "Sí (en versión gratuita)",
+      "puntuacion": "★★★☆☆",
+      "compatibilidad": "Windows 7/8/10/11"
+    },
+    {
+      "tool": "Razer Cortex",
+      "precio": "Gratis",
+      "privacidad": "Dudosa (requiere cuenta)",
+      "peso": "Pesado (200 MB en RAM)",
+      "modulos": 3,
+      "restauracion": "No",
+      "publicidad": "Sí (ofertas Razer)",
+      "puntuacion": "★★☆☆☆",
+      "compatibilidad": "Windows 10/11"
+    },
+    {
+      "tool": "Wise Care 365",
+      "precio": "Gratis / Pro 29.95 USD/año",
+      "privacidad": "Aceptable",
+      "peso": "Ligero",
+      "modulos": 5,
+      "restauracion": "No",
+      "publicidad": "No",
+      "puntuacion": "★★★☆☆",
+      "compatibilidad": "Windows 7/8/10/11"
+    },
+    {
+      "tool": "Advanced SystemCare",
+      "precio": "Gratis / Pro 29.99 USD/año",
+      "privacidad": "Baja (recopila muchos datos)",
+      "peso": "Pesado (120 MB instalador)",
+      "modulos": 6,
+      "restauracion": "Sí (solo Pro)",
+      "publicidad": "Sí (versión gratuita)",
+      "puntuacion": "★★★☆☆",
+      "compatibilidad": "Windows 7/8/10/11"
+    },
+    {
+      "tool": "Glary Utilities",
+      "precio": "Gratis / Pro 39.95 USD/año",
+      "privacidad": "Regular",
+      "peso": "Medio (30 MB instalador)",
+      "modulos": 7,
+      "restauracion": "Sí (solo Pro)",
+      "publicidad": "No",
+      "puntuacion": "★★★★☆",
+      "compatibilidad": "Windows 7/8/10/11"
+    }
+  ],
+  "compatibility": [
+    { "so": "Windows 10 (todas las versiones)", "soporte": "✅ Compatibilidad asegurada" },
+    { "so": "Windows 11 (todas las versiones)", "soporte": "✅ Compatibilidad asegurada" },
+    { "so": "Windows 10 IoT Enterprise LTSC 2021", "soporte": "✅ Probado en hardware real de laboratorio" },
+    { "so": "Windows 8.1 / 8", "soporte": "⚠️ Funcional, pero no testeado" }
+  ],
+  "faq": [
+    {
+      "question": "¿Por qué mi PC se pone lenta?",
+      "answer": "Windows acumula archivos temporales, registros obsoletos y servicios innecesarios que consumen RAM y CPU. Con el tiempo esto degrada el rendimiento incluso en hardware moderno.",
+      "icon": "fa-exclamation-triangle"
+    },
+    {
+      "question": "¿Qué hace NexusOptimizer?",
+      "answer": "Limpia archivos basura, libera RAM, desactiva servicios superfluos, optimiza la red y protege tu privacidad deshabilitando la telemetría. Todo con un solo clic.",
+      "icon": "fa-lightbulb"
+    },
+    {
+      "question": "¿Es seguro? ¿Puedo perder datos?",
+      "answer": "Es completamente seguro. Antes de cada optimización se crea un punto de restauración del sistema. Nunca se tocan documentos, fotos ni archivos personales.",
+      "icon": "fa-shield"
+    },
+    {
+      "question": "¿Funciona en cualquier PC?",
+      "answer": "Sí, siempre que uses Windows 10 u 11 de 64 bits con al menos 2 GB de RAM. Está probado en equipos desde gama baja hasta alta.",
+      "icon": "fa-desktop"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Registro de Windows",
+      "definition": "Base de datos jerárquica que almacena la configuración del sistema operativo y de las aplicaciones. Se divide en colmenas como HKLM y HKCU."
+    },
+    {
+      "term": "WMI (Windows Management Instrumentation)",
+      "definition": "Infraestructura que permite consultar información del hardware y del sistema operativo mediante consultas WQL (similares a SQL)."
+    },
+    {
+      "term": "MMCSS (Multimedia Class Scheduler Service)",
+      "definition": "Servicio de Windows que garantiza la prioridad de los procesos de audio y video para evitar cortes y mejorar la latencia."
+    },
+    {
+      "term": "Algoritmo de Nagle",
+      "definition": "Técnica de red que agrupa paquetes pequeños para reducir la sobrecarga, pero puede añadir latencia. Se desactiva para mejorar el rendimiento en juegos online."
+    },
+    {
+      "term": "TRIM",
+      "definition": "Comando que permite al sistema operativo notificar al SSD qué bloques de datos ya no están en uso, mejorando el rendimiento y prolongando la vida útil del disco."
+    },
+    {
+      "term": "Pagefile (Archivo de paginación)",
+      "definition": "Memoria virtual que Windows utiliza como extensión de la RAM. Un tamaño fijo puede mejorar el rendimiento al evitar cambios dinámicos."
+    },
+    {
+      "term": "Telemetría",
+      "definition": "Recopilación de datos de uso del sistema que Microsoft utiliza para mejorar sus productos. NexusOptimizer permite reducir este envío de datos."
+    },
+    {
+      "term": "Performance Counters",
+      "definition": "Métricas del sistema (uso de CPU, memoria, disco) que Windows expone para monitoreo en tiempo real."
+    },
+    {
+      "term": "HAGS (Hardware Accelerated GPU Scheduling)",
+      "definition": "Función de Windows que permite a la GPU gestionar su propia memoria, reduciendo la latencia en juegos y aplicaciones gráficas. Disponible desde Windows 10 2004."
+    },
+    {
+      "term": "Core Parking",
+      "definition": "Mecanismo de Windows que apaga núcleos de CPU inactivos para ahorrar energía. Deshabilitarlo mejora el rendimiento en juegos al mantener todos los núcleos activos."
+    },
+    {
+      "term": "Ducking (Reducción automática de volumen)",
+      "definition": "Función de Windows que reduce el volumen de las aplicaciones cuando detecta una llamada de voz (Teams, Discord). NexusOptimizer permite deshabilitarlo."
+    },
+    {
+      "term": "MTU (Maximum Transmission Unit)",
+      "definition": "Tamaño máximo de paquete que puede enviarse en una red sin fragmentación. Un MTU óptimo reduce la latencia y mejora la velocidad de navegación."
+    },
+    {
+      "term": "NVIDIA Overlay",
+      "definition": "Función de GeForce Experience que permite grabar, transmitir y capturar pantalla. Deshabilitarlo libera recursos de GPU y reduce la latencia en juegos."
+    },
+    {
+      "term": "Restore Point (Punto de restauración)",
+      "definition": "Copia de seguridad del sistema que permite revertir los cambios a un estado anterior. NexusOptimizer crea uno automáticamente antes de aplicar optimizaciones."
+    },
+    {
+      "term": "Bloatware",
+      "definition": "Programas y aplicaciones preinstaladas que consumen recursos y espacio en disco sin ser útiles para el usuario. NexusOptimizer ayuda a deshabilitarlos."
+    }
+  ],
+  "modules": [
+    {
+      "id": "disk",
+      "name": "Optimizador de Disco",
+      "description": "Elimina archivos temporales, cachés de navegadores, instaladores residuales y vacía la papelera.",
+      "icon": "fa-solid fa-hard-drive",
+      "category": "Limpieza",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "ram",
+      "name": "Optimizador de RAM",
+      "description": "Libera el Working Set de procesos en segundo plano y limpia la memoria caché no utilizada.",
+      "icon": "fa-solid fa-memory",
+      "category": "Rendimiento",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "network",
+      "name": "Optimizador de Red",
+      "description": "Ajusta la pila TCP/IP y el MTU para reducir la latencia (ping) y estabilizar la conexión.",
+      "icon": "fa-solid fa-wifi",
+      "category": "Red",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "privacy",
+      "name": "Privacidad y Telemetría",
+      "description": "Desactiva servicios de rastreo, recolección de datos y telemetría innecesaria de Windows.",
+      "icon": "fa-solid fa-shield-halved",
+      "category": "Privacidad",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "gaming",
+      "name": "Modo Gaming",
+      "description": "Prioriza los recursos de CPU y GPU para el proceso en primer plano, pausando tareas secundarias.",
+      "icon": "fa-solid fa-gamepad",
+      "category": "Gaming",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "startup",
+      "name": "Gestor de Inicio",
+      "description": "Lista, pausa o deshabilita aplicaciones y servicios que se ejecutan al encender la PC.",
+      "icon": "fa-solid fa-rocket",
+      "category": "Sistema",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "services",
+      "name": "Optimizador de Servicios",
+      "description": "Desactiva servicios ocultos de Windows que consumen CPU en segundo plano sin beneficio real.",
+      "icon": "fa-solid fa-gears",
+      "category": "Sistema",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "dns",
+      "name": "Optimizador DNS",
+      "description": "Cambia a servidores DNS rápidos y seguros (Cloudflare/Google) para una navegación más ágil.",
+      "icon": "fa-solid fa-server",
+      "category": "Red",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "pagefile",
+      "name": "Gestor de Pagefile",
+      "description": "Ajusta el archivo de paginación para mejorar el rendimiento en discos SSD y HDD.",
+      "icon": "fa-solid fa-file-lines",
+      "category": "Rendimiento",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "audio",
+      "name": "Optimizador de Audio",
+      "description": "Ajusta la latencia de los drivers de sonido para mejorar la sincronización en juegos rítmicos.",
+      "icon": "fa-solid fa-volume-high",
+      "category": "Gaming",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "tasks",
+      "name": "Planificador de Tareas",
+      "description": "Desactiva tareas automáticas de Windows (defrag, diagnóstico) que se ejecutan durante las partidas.",
+      "icon": "fa-solid fa-clock",
+      "category": "Sistema",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "gpu",
+      "name": "Tweaks de GPU",
+      "description": "Aplica ajustes específicos según el fabricante de la placa de video detectada (NVIDIA o AMD) para reducir latencia gráfica.",
+      "icon": "fa-solid fa-display",
+      "category": "Gaming",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "hosts",
+      "name": "Bloqueador de Hosts",
+      "description": "Bloquea dominios de publicidad y rastreo mediante la lista StevenBlack, integrada directamente al archivo hosts de Windows.",
+      "icon": "fa-solid fa-ban",
+      "category": "Privacidad",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "benchmark",
+      "name": "Motor de Benchmark",
+      "description": "Mide el rendimiento del sistema antes y después de optimizar, comparando resultados de forma objetiva.",
+      "icon": "fa-solid fa-stopwatch",
+      "category": "Diagnóstico",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "benchmark-history",
+      "name": "Historial de Benchmark",
+      "description": "Guarda hasta 50 sesiones de benchmark con gráfico de tendencia, para ver la evolución del rendimiento en el tiempo.",
+      "icon": "fa-solid fa-chart-line",
+      "category": "Diagnóstico",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "health-score",
+      "name": "Health Score",
+      "description": "Calcula una puntuación de 0 a 100 sobre el estado general del sistema, combinando múltiples factores de diagnóstico.",
+      "icon": "fa-solid fa-heart-pulse",
+      "category": "Diagnóstico",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "profiles",
+      "name": "Perfiles de Optimización",
+      "description": "Aplica varios módulos en una sola operación según un objetivo de uso: Gaming, Work, Balanced o Power Save.",
+      "icon": "fa-solid fa-layer-group",
+      "category": "Sistema",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "speedtest",
+      "name": "Test de Velocidad",
+      "description": "Mide la velocidad de descarga, subida y latencia de tu conexión a internet, sin depender de apps de terceros.",
+      "icon": "fa-solid fa-gauge",
+      "category": "Red",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "mouse",
+      "name": "Optimizador de Mouse",
+      "description": "Desactiva la aceleración del puntero para lograr un movimiento 1:1, reduciendo la latencia de entrada en juegos.",
+      "icon": "fa-solid fa-computer-mouse",
+      "category": "Gaming",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "visual",
+      "name": "Optimizador Visual",
+      "description": "Reduce animaciones, transparencias y efectos de la interfaz para liberar recursos de GPU en juegos.",
+      "icon": "fa-solid fa-eye",
+      "category": "Rendimiento",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "power",
+      "name": "Gestor de Energía",
+      "description": "Activa el plan oculto 'Máximo rendimiento' (Ultimate Performance) y elimina técnicas de ahorro que introducen microlatencias.",
+      "icon": "fa-solid fa-bolt",
+      "category": "Rendimiento",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "logger",
+      "name": "Registro de Eventos",
+      "description": "Registra cada acción del sistema en un archivo de log con rotación automática, para trazabilidad y soporte técnico.",
+      "icon": "fa-solid fa-file-pen",
+      "category": "Infraestructura",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "settings",
+      "name": "Gestor de Configuración",
+      "description": "Persiste tus preferencias (notificaciones, comportamiento de bandeja, posición de ventana) en un archivo de configuración propio.",
+      "icon": "fa-solid fa-sliders",
+      "category": "Infraestructura",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "notifications",
+      "name": "Notificaciones",
+      "description": "Sistema de avisos visuales no bloqueantes con cuatro niveles de severidad, en lugar de cuadros de diálogo tradicionales.",
+      "icon": "fa-solid fa-bell",
+      "category": "Infraestructura",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "restore",
+      "name": "Puntos de Restauración",
+      "description": "Crea automáticamente un punto de restauración de Windows antes de aplicar cualquier cambio significativo al sistema.",
+      "icon": "fa-solid fa-clock-rotate-left",
+      "category": "Infraestructura",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "core-logic",
+      "name": "Núcleo de Optimización",
+      "description": "Clase base que concentra los tweaks heredados del script original (red, CPU, GPU, sistema, modo extremo), validados desde la primera versión del proyecto.",
+      "icon": "fa-solid fa-microchip",
+      "category": "Sistema",
+      "color": "#b8a99a"
+    },
+    {
+      "id": "updates",
+      "name": "Verificador de Actualizaciones",
+      "description": "Comprueba en segundo plano si hay una nueva versión disponible de NexusOptimizer, sin interrumpir tu trabajo.",
+      "icon": "fa-solid fa-arrows-rotate",
+      "category": "Infraestructura",
+      "color": "#b8a99a"
+    }
+  ],
+  "prices": [
+    {
+      "tier": "NexusOptimizer",
+      "subtitle": "Licencia completa",
+      "description": "Acceso de por vida a todos los módulos de optimización, actualizaciones gratuitas y soporte prioritario.",
+      "price_ars": "$90.000 ARS",
+      "price_usd": "$67 USD",
+      "features": [
+        "27 módulos de optimización",
+        "Limpieza profunda del sistema",
+        "Optimización de red y gaming",
+        "Protección de privacidad",
+        "Soporte prioritario por email"
+      ],
+      "image": "assets/images/logo_nexus_192x192.png",
+      "color": "#00e5ff",
+      "recommended": true
+    }
+  ],
+  "roadmap": [
+    {
+      "version": "2.0",
+      "status": "✅ Lanzado",
+      "features": [
+        "27 módulos de optimización",
+        "Interfaz gráfica renovada con tema oscuro",
+        "Benchmark antes/después con historial",
+        "Perfiles de optimización (Gaming, Work, Balanced, Power Save)",
+        "Optimización de privacidad y telemetría",
+        "Bloqueador de hosts integrado",
+        "Sistema de salud del PC (Health Score)"
+      ]
+    },
+    {
+      "version": "2.1",
+      "status": "🔄 En desarrollo",
+      "features": [
+        "Módulo de monitoreo en tiempo real (CPU, RAM, disco)",
+        "Mejoras en la interfaz gráfica y accesibilidad",
+        "Soporte para temas personalizados (claro/oscuro)",
+        "Exportación de reportes en PDF"
+      ]
+    },
+    {
+      "version": "2.2",
+      "status": "📋 Planeado",
+      "features": [
+        "Optimizador de SSD (TRIM, over-provisioning)",
+        "Programador de tareas automáticas",
+        "Integración con Discord Rich Presence",
+        "Modo silencioso para gaming (sin notificaciones)"
+      ]
+    },
+    {
+      "version": "2.3",
+      "status": "📋 Planeado",
+      "features": [
+        "Gestión avanzada de servicios de Windows",
+        "Análisis de espacio en disco por carpeta",
+        "Recomendaciones personalizadas según uso"
+      ]
+    },
+    {
+      "version": "3.0",
+      "status": "🔮 Futuro",
+      "features": [
+        "Versión portable sin instalación",
+        "Soporte multilingüe (inglés, portugués, francés)",
+        "API para plugins de terceros",
+        "Dashboard web para monitorización remota"
+      ]
+    }
+  ],
+  "support": [
+    {
+      "issue": "Error al obtener permisos de administrador",
+      "solution": "Ejecuta NexusOptimizer como administrador (clic derecho > Ejecutar como administrador). Si el problema persiste, desactiva temporalmente el Control de Cuentas de Usuario (UAC)."
+    },
+    {
+      "issue": "El antivirus bloquea la aplicación",
+      "solution": "Agrega una exclusión en tu antivirus para la carpeta de NexusOptimizer. Nuestro código es limpio, pero algunos antivirus detectan falsos positivos por el acceso al registro."
+    },
+    {
+      "issue": "No se crea el punto de restauración",
+      "solution": "Asegúrate de tener activada la protección del sistema en la unidad C:. Ve a 'Propiedades del sistema' > 'Protección del sistema' y habilítala."
+    },
+    {
+      "issue": "Después de optimizar, un programa no funciona",
+      "solution": "Restaura el punto de restauración creado antes de la optimización. Luego, añade ese programa a la lista de exclusiones en el módulo 'Servicios'."
+    },
+    {
+      "issue": "La optimización de red no mejora mi ping",
+      "solution": "Verifica que tu conexión a internet sea estable. La optimización de red reduce la latencia interna, pero no puede mejorar la calidad de tu ISP. Prueba reiniciando el router y usando cable Ethernet en lugar de Wi-Fi."
+    },
+    {
+      "issue": "¿Cómo deshago todos los cambios de NexusOptimizer?",
+      "solution": "Usa el botón 'Restaurar Configuración Original de Windows' en el Dashboard. También puedes restaurar el punto de restauración del sistema desde el Panel de Control."
+    },
+    {
+      "issue": "¿Por qué mi PC se reinicia después de optimizar?",
+      "solution": "Algunos tweaks (como la desactivación de mitigaciones de Spectre) requieren reinicio para aplicarse. Es normal y necesario."
+    },
+    {
+      "issue": "No encuentro el módulo de privacidad",
+      "solution": "Ve a la sección 'Privacidad' en el menú lateral (icono de candado). Allí encontrarás todos los ajustes de telemetría, Cortana, ID de publicidad y más."
+    },
+    {
+      "issue": "¿Cómo sé si mi SSD tiene TRIM activo?",
+      "solution": "En la sección 'Disco' del menú, verás el estado de TRIM. Si está desactivado, puedes habilitarlo con el botón correspondiente."
+    },
+    {
+      "issue": "NexusOptimizer no detecta mi GPU",
+      "solution": "Asegúrate de tener instalados los drivers más recientes de tu GPU. Si el problema persiste, ejecuta el comando 'dxdiag' y verifica que Windows reconozca tu tarjeta gráfica."
+    }
+  ],
+  "team": [
+    {
+      "name": "Máximo Uziel Seijo",
+      "role": "Líder de Proyecto",
+      "bio": "Líder de proyecto y principal desarrollador de NexusOptimizer. Futuro ingeniero en informática. Responsable del diseño de la arquitectura y de la mayor parte del código fuente.",
+      "github": "https://github.com/ImMinato",
+      "avatar": "https://unavatar.io/github/ImMinato"
+    },
+    {
+      "name": "Micaias Ángel Juárez",
+      "role": "Integrante del equipo",
+      "bio": "Integrante del equipo de desarrollo, participando en las etapas de programación, pruebas y documentación del proyecto.",
+      "github": "https://github.com/MicaA209",
+      "avatar": "https://unavatar.io/github/MicaA209"
+    },
+    {
+      "name": "Ian Nazareno Noblega",
+      "role": "Integrante del equipo",
+      "bio": "Integrante del equipo de desarrollo, participando en las etapas de programación, pruebas y documentación del proyecto."
+    },
+    {
+      "name": "Santiago Luna",
+      "role": "Desarrollador web / colaborador",
+      "bio": "Colaborador en el desarrollo y mantenimiento del sitio web de NexusOptimizer.",
+      "github": "https://github.com/MauroKpoxD",
+      "avatar": "https://unavatar.io/github/MauroKpoxD"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Leon Diaz",
+      "role": "Jugador de juegos casuales",
+      "text": "Pasé de tener tirones en mitad de las partidas a jugar completamente fluido. El Modo Gaming de NexusOptimizer es magia pura.",
+      "rating": 5
+    },
+    {
+      "name": "Joaquín Braglia",
+      "role": "Ryzen 7 5600G · RTX 2060 · 16GB RAM",
+      "text": "Tenía cuelgues y la conexión inestable a pesar de tener un equipo potente. Después de optimizar con NexusOptimizer, mejoró mi conexión y el rendimiento del sistema se estabilizó por completo.",
+      "rating": 5
+    },
+    {
+      "name": "Facundo R.",
+      "role": "Streamer",
+      "text": "El optimizador de Red bajó mi ping de 80ms a 45ms. Se nota muchísimo la diferencia en competitivo. ¡Recomendado!",
+      "rating": 4
+    },
+    {
+      "name": "Sofía L.",
+      "role": "Estudiante de Ingeniería",
+      "text": "Tenía la PC llena de bloatware y programas de fábrica. NexusOptimizer los eliminó todos y ahora mi notebook vuela.",
+      "rating": 5
+    }
+  ],
+  "timeline": [
+    {
+      "date": "Mediados de 2025",
+      "title": "El script original (Batch)",
+      "description": "El proyecto arranca como un script de línea de comandos para Windows (OpV6_4.bat, 'ByteFix Edition'), con perfiles preconfigurados y un motor de reversión propio."
+    },
+    {
+      "date": "Fines de 2025",
+      "title": "Migración a aplicación de escritorio",
+      "description": "Se decide migrar la lógica validada del script a una aplicación C# sobre WPF, con interfaz gráfica, benchmark y persistencia de datos."
+    },
+    {
+      "date": "Diciembre 2025",
+      "title": "Infraestructura común",
+      "description": "Se incorporan los módulos de registro de eventos, configuración persistente y notificaciones no bloqueantes."
+    },
+    {
+      "date": "Marzo 2026",
+      "title": "Expansión a 11 módulos",
+      "description": "Se amplía la cobertura funcional con once módulos de optimización (disco, privacidad, energía, mouse, visual, audio, tareas, DNS, pagefile) y la base de 38 consejos de mantenimiento."
+    },
+    { 
+      "date": "Junio 2026",
+      "title": "NexusOptimizer 2.0",
+      "description": "Lanzamiento de la versión final con perfiles de optimización (Gaming, Work, Balanced, Power Save), Health Score y más de 27 módulos en total."
+    }
+  ]
+}

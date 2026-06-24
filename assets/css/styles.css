@@ -1788,3 +1788,24 @@ footer p {
     color: #ffd93d;
     letter-spacing: 2px;
 }
+
+.logo-img {
+    height: 38px;
+    width: auto;
+    vertical-align: middle;
+    filter: drop-shadow(0 0 6px rgba(77, 208, 225, 0.3));
+}
+
+.hero-logo {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 20px rgba(77, 208, 225, 0.15));
+}
+
+@media (max-width: 480px) {
+    .logo-img {
+        height: 28px;
+    }
+}

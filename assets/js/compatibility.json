@@ -1,6 +1,0 @@
-[
-  { "so": "Windows 10 (todas las versiones)", "soporte": "✅ Compatibilidad asegurada" },
-  { "so": "Windows 11 (todas las versiones)", "soporte": "✅ Compatibilidad asegurada" },
-  { "so": "Windows 10 IoT Enterprise LTSC 2021", "soporte": "✅ Probado en hardware real de laboratorio" },
-  { "so": "Windows 8.1 / 8", "soporte": "⚠️ Funcional, pero no testeado" }
-]
